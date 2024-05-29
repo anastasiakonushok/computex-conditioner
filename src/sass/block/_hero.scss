@@ -8,23 +8,40 @@
     background-attachment: fixed;
     display: flex;
     align-items:center;
+    padding-top: 105px;
 }
 
 .hero-container {
     display: flex;
     align-items:center;
     gap: 60px;
+    h1 {
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        color:var(--main-yellow);
+    }
+    a {
+        margin-top: 30px;
+        display: inline-block;
+    }
+    h2 {
+        text-transform: uppercase;
+        color:var(--main-white);
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    p {
+        color:var(--main-white);
+        width: 70%;
+    }
 
     &__img {
         width: 50%;
 
         img {
             max-height: 350px;
-        }
-    }
-    &__content {
-        h1 {
-            color:var(--main-yellow);
+            width: 100%;
+            object-fit: cover;
         }
     }
 }

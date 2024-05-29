@@ -10,25 +10,35 @@ block page
                         h1 Максимальный комфорт с нашими кондиционерами!
                         h2 С гарантией на 5 лет!
                         p Обеспечьте свой дом идеальной прохладой с нашими кондиционерами: мы предложим вам лучший подбор, быстрый монтаж и непревзойденные цены.
-                        a(href="") Каталог 
+                        a(href="").button-primary Каталог 
                     .hero-container__img 
                         img(src="img/air-con.jpg" alt="")
             include chunk/brand  
             section.services-section 
                 .container.services-section__container.flex
-                    .services-section__card 
+                    .services-section__card
                         span 01.
                         h2 Монтаж
                         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, expedita! Perspiciatis maxime, odit quis corrupti aut dolorem. Sed nemo, eveniet neque atque autem, totam sint saepe similique temporibus officia corrupti!
-                        a(href="") подробнее
-                    .services-section__card 
+                        a(href="").button-primary подробнее
+                    .services-section__card
                         span 02.
                         h2 Монтаж
                         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, expedita! Perspiciatis maxime, odit quis corrupti aut dolorem. Sed nemo, eveniet neque atque autem, totam sint saepe similique temporibus officia corrupti!
-                        a(href="") подробнее
-                    .services-section__card 
+                        a(href="").button-primary подробнее
+                    .services-section__card
                         span 03.
                         h2 Монтаж
                         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, expedita! Perspiciatis maxime, odit quis corrupti aut dolorem. Sed nemo, eveniet neque atque autem, totam sint saepe similique temporibus officia corrupti!
-                        a(href="") подробнее
+                        a(href="").button-primary подробнее
+            section.info-section
+                .container.info-section__container
+                    .info-section__grid.flex
+                        .flex.info-section__column
+                            .info-section__card.info-section__card--1
+                                h2 1
+                            .info-section__card.info-section__card--2
+                                h2 2
+                        .info-section__column.info-section__card.info-section__card--3
+                            h2 3
         include chunk/footer

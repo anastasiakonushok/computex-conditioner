@@ -23,72 +23,39 @@
             // width: 140px;
         }
     }
-
-    &__phone {
+    &__info {
         gap: 10px;
         align-items: center;
-
         .icon {
             align-items: center;
             justify-content: center;
+            color: var(--main-yellow); 
         }
-
         a {
             @include regular;
             color: var(--main-white);
             font-weight: 500;
+            // text-transform: uppercase;
         }
-    }
-
-    &__email {
-        gap: 10px;
-        align-items: center;
-
-        .icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
         .text {
             @include regular;
             color: var(--main-white);
             font-weight: 500;
-        }
-    }
-
-    &__nav {
-        gap: 10px;
-
-        a {
-            @include regular;
-            color: var(--main-white);
-            font-weight: 500;
+            // text-transform: uppercase;
         }
     }
 }
 
 .header-bottom {
+    .sub-menu {
+        .nav__link {
+            color:var(--dark-color);
+        }
+    }
     &__container {
         height: 100%;
         align-items: center;
         justify-content: space-between;
-    }
-
-    &__personal {
-        color: var(--main-white);
-        align-items: center;
-        gap: 8px;
-
-        .icon {
-            display: flex;
-            align-items: center;
-        }
-
-        .text {
-            font-weight: 600;
-            line-height: 120%;
-        }
     }
 
     .nav {
@@ -199,7 +166,7 @@
                 padding: 0 !important;
                 width: 100%;
                 display: block;
-                color:var(--dark-color);
+                // color:var(--dark-color)!important;
             }
         }
 

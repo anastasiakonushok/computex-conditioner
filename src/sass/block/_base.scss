@@ -52,3 +52,15 @@ h3 {
 p {
     @include regular;
 }
+
+.button-primary {
+    @include button-yellow(15px 30px);
+  }
+  
+//   .button-secondary {
+//     @include button(#6c757d, #fff);
+//   }
+  
+//   .button-success {
+//     @include button(#28a745, #fff);
+//   }

@@ -228,6 +228,7 @@ const swiperCertificates = new Swiper(".swiper-certificates", {
 });
 const swiperChanel = new Swiper(".swiper-brand-chanel", {
     speed: 2000,
+    spaceBetween: 60,
     loop: true,
     autoplay: {
         delay: 1,

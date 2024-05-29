@@ -1,4 +1,5 @@
 .services-section {
+    background:var(--main-white);
     padding: 90px 0px;
 
     &__container {
@@ -10,5 +11,17 @@
             font-size: 96px;
             font-weight: 800;
         }
+    }
+}
+
+.info-section {
+   padding: 90px 0px;
+    &__card {
+        padding: 30px;
+        background:var(--main-white);
+        border-radius: 8px;
+    }
+    &__column {
+        flex-basis: 49%;
     }
 }
