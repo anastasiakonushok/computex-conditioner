@@ -226,7 +226,7 @@ const swiperCertificates = new Swiper(".swiper-certificates", {
         },
     },
 });
-const swiperChanel = new Swiper(".swiper-popular-chanel", {
+const swiperChanel = new Swiper(".swiper-brand-chanel", {
     speed: 2000,
     loop: true,
     autoplay: {

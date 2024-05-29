@@ -1,0 +1,14 @@
+.services-section {
+    padding: 90px 0px;
+
+    &__container {
+        gap: 30px;
+    }
+    &__card {
+        span {
+            color:var(--main-yellow);
+            font-size: 96px;
+            font-weight: 800;
+        }
+    }
+}

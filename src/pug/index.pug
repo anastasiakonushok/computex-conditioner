@@ -1,6 +1,34 @@
 extends layout/app
 
 block page 
-    include chunk/header
-    h1 привет
-    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi obcaecati dolorum. Exercitationem ab dolorem pariatur suscipit, dolore consequatur corporis! Natus temporibus ratione, cumque possimus quam tempore facere repellat unde?
+    .wrapp-page
+        include chunk/header-main
+        main.main
+            section.hero(style='background-image: linear-gradient(rgba(43, 60, 77, 0.74), rgba(43, 60, 77, 0.74)), url("./img/fon-2.png"); ')
+                .container.hero-container 
+                    .hero-container__content 
+                        h1 Максимальный комфорт с нашими кондиционерами!
+                        h2 С гарантией на 5 лет!
+                        p Обеспечьте свой дом идеальной прохладой с нашими кондиционерами: мы предложим вам лучший подбор, быстрый монтаж и непревзойденные цены.
+                        a(href="") Каталог 
+                    .hero-container__img 
+                        img(src="img/air-con.jpg" alt="")
+            include chunk/brand  
+            section.services-section 
+                .container.services-section__container.flex
+                    .services-section__card 
+                        span 01.
+                        h2 Монтаж
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, expedita! Perspiciatis maxime, odit quis corrupti aut dolorem. Sed nemo, eveniet neque atque autem, totam sint saepe similique temporibus officia corrupti!
+                        a(href="") подробнее
+                    .services-section__card 
+                        span 02.
+                        h2 Монтаж
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, expedita! Perspiciatis maxime, odit quis corrupti aut dolorem. Sed nemo, eveniet neque atque autem, totam sint saepe similique temporibus officia corrupti!
+                        a(href="") подробнее
+                    .services-section__card 
+                        span 03.
+                        h2 Монтаж
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, expedita! Perspiciatis maxime, odit quis corrupti aut dolorem. Sed nemo, eveniet neque atque autem, totam sint saepe similique temporibus officia corrupti!
+                        a(href="") подробнее
+        include chunk/footer

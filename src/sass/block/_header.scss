@@ -1,8 +1,8 @@
 .header {
-    background: var(--white-color);
+    background: transparent;
     // position: absolute;
     width: 100%;
-    position: sticky;
+    position: absolute;
     top: 0px;
     left: 0px;
     z-index: 100;
@@ -19,7 +19,7 @@
 
     &__logo {
         img {
-            height: 45px;
+            height: 35px;
             // width: 140px;
         }
     }
@@ -35,7 +35,7 @@
 
         a {
             @include regular;
-            color: var(--main-blue);
+            color: var(--main-white);
             font-weight: 500;
         }
     }
@@ -52,7 +52,7 @@
 
         .text {
             @include regular;
-            color: var(--main-blue);
+            color: var(--main-white);
             font-weight: 500;
         }
     }
@@ -62,7 +62,7 @@
 
         a {
             @include regular;
-            color: var(--dark-color);
+            color: var(--main-white);
             font-weight: 500;
         }
     }
@@ -76,7 +76,7 @@
     }
 
     &__personal {
-        color: var(--main-blue);
+        color: var(--main-white);
         align-items: center;
         gap: 8px;
 
@@ -106,7 +106,7 @@
 
         &__link {
             @include regular;
-            color: var(--dark-color);
+            color: var(--main-white);
             font-weight: 500;
             padding-right: 20px;
             z-index: 100;
@@ -155,7 +155,7 @@
 
         span {
             transition: all 0.3s ease;
-            background: var(--dark-color);
+            background: var(--main-white);
             display: block;
             height: 3px;
             width: 30px;
@@ -199,6 +199,7 @@
                 padding: 0 !important;
                 width: 100%;
                 display: block;
+                color:var(--dark-color);
             }
         }
 
@@ -229,41 +230,13 @@
 }
 
 @include mq(tablet-wide, min) {
-    // .header-top {
-    //     &__phone,
-    //     &__email {
-    //         @include hover {
-    //             a {
-    //                 color: var(--footer-bg);
-    //             }
-
-    //             svg {
-    //                 path {
-    //                     fill: var(--footer-bg);
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-    .header-bottom {
-        &__personal {
-            @include hover {
-                color: var(--footer-bg);
-
-                svg {
-                    path {
-                        fill: var(--footer-bg);
-                    }
-                }
-            }
-        }
-    }
+    
     .header_down {
         top: -200px;
     }
-    .header_up {
-        box-shadow: 0 6px 8px 0 rgba(83, 83, 83, 0.13);
-    }
+    // .header_up {
+    //     box-shadow: 0 6px 8px 0 rgba(83, 83, 83, 0.13);
+    // }
     .nav__item:hover > .sub-menu {
         display: block;
     }
@@ -301,7 +274,7 @@
                 padding-bottom: 30px;
             }
             &__link:hover {
-                color: var(--main-blue);
+                color: var(--main-yellow);
             }
         }
     }

@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--bg-color);
+    font-family: var(--body-font);
+}
+.wrapp-page {
+    min-height: 100vh;
+    position: relative;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width:100%;
+}
+
+.flex {
+    display: flex;
+}
+
+h1 {
+    @include h1;
+}
+
+h2 {
+    @include h2;
+}
+
+h3 {
+    @include h3;
+}
+
+p {
+    @include regular;
+}
