@@ -20,25 +20,27 @@ block page
                         span 01.
                         h2 Монтаж
                         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, expedita! Perspiciatis maxime, odit quis corrupti aut dolorem. Sed nemo, eveniet neque atque autem, totam sint saepe similique temporibus officia corrupti!
-                        a(href="").button-primary подробнее
+                        a(href="").button-primary Подробнее
                     .services-section__card
                         span 02.
-                        h2 Монтаж
+                        h2 Обслуживание
                         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, expedita! Perspiciatis maxime, odit quis corrupti aut dolorem. Sed nemo, eveniet neque atque autem, totam sint saepe similique temporibus officia corrupti!
-                        a(href="").button-primary подробнее
+                        a(href="").button-primary Подробнее
                     .services-section__card
                         span 03.
-                        h2 Монтаж
+                        h2 Ремонт
                         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, expedita! Perspiciatis maxime, odit quis corrupti aut dolorem. Sed nemo, eveniet neque atque autem, totam sint saepe similique temporibus officia corrupti!
-                        a(href="").button-primary подробнее
+                        a(href="").button-primary Подробнее
             section.info-section
                 .container.info-section__container
-                    .info-section__grid.flex
-                        .flex.info-section__column
-                            .info-section__card.info-section__card--1
-                                h2 1
-                            .info-section__card.info-section__card--2
-                                h2 2
-                        .info-section__column.info-section__card.info-section__card--3
-                            h2 3
+                    .info-section__grid
+                        a(href="").info-section__card.info-section__card--1(style='background-image: url("./img/bg-sale.png"); ')
+                            h2 Кондиционеры по лучшим ценам!
+                        a(href="").info-section__card.info-section__card--2
+                            h2 Покупай сейчас —плати потом
+                            p Все виды кондиционеров от 40 р. в месяц
+                            img(src="img/credit-card.png" alt="")
+                        a(href="").info-section__card.info-section__card--3
+                            h2 кондиционеры для помещений от 50 кв.
+            include chunk/news
         include chunk/footer
