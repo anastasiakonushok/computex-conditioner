@@ -43,7 +43,7 @@
             }
 
             .swiper-pagination-bullet-active {
-                background: var(--main-blue);
+                background: var(--main-yellow);
             }
         }
     }
@@ -70,35 +70,6 @@
         @include h3;
         color: var(--dark-color);
     }
-    &__img {
-        position: relative;
-        height: 150px;
-        width: 100%;
-        overflow: hidden;
-        img {
-            height: 100%;
-            width: 100%;
-            transition: all 0.3s ease;
-        }
-    }
-
-    &__img::after {
-        content: "";
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        display: block;
-        background: linear-gradient(
-            0deg,
-            rgba(54, 54, 54, 0.4),
-            rgba(51, 48, 48, 0.4)
-        );
-    }
-
     &__content {
         padding: 16px;
         background: var(--white-color);
@@ -111,6 +82,15 @@
 
         h3 {
             margin-bottom: 10px;
+            margin: 0;
+            // /* Убираем внешний отступ */
+            -webkit-line-clamp: 3;
+            // /* Число отображаемых строк */
+            display: -webkit-box;
+            // /* Включаем флексбоксы */
+            -webkit-box-orient: vertical;
+            // /* Вертикальная ориентация */
+            overflow: hidden;
         }
 
         p {
@@ -126,6 +106,10 @@
             -webkit-box-orient: vertical;
             // /* Вертикальная ориентация */
             overflow: hidden;
+        }
+        a {
+            display: inline-block;
+            margin-top: 30px;
         }
     }
 }
