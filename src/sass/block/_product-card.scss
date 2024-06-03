@@ -1,0 +1,40 @@
+.section-product {
+    padding-bottom: 90px;
+    &__info {
+        justify-content: space-between;
+    }
+    &__nav {
+        gap: 15px;
+        margin-bottom: 30px;
+        .swiper-product-prev,.swiper-product-next {
+            color: var(--main-yellow);
+            cursor: pointer;
+        }
+    }
+}
+
+.product-card {
+    padding: 30px;
+    background: var(--white-color);
+    border-radius: 8px;
+
+    &__img {
+        width: 100%;
+        img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            max-height: 150px;
+        }
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .title {
+            font-weight: 700;
+            min-height: 50px;
+        }
+    }
+}

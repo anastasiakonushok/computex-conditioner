@@ -177,12 +177,12 @@ const swiperAuto = new Swiper(".swiper-auto", {
     },
 });
 //
-const swiperTariff = new Swiper(".swiper-tariff", {
+const swiperProduct = new Swiper(".swiper-product", {
     // Optional parameters
     spaceBetween: 30,
     navigation: {
-        nextEl: ".swiper-tariff-next",
-        prevEl: ".swiper-tariff-prev",
+        nextEl: ".swiper-product-next",
+        prevEl: ".swiper-product-prev",
     },
     // autoplay: {
     //   delay: 3000,
