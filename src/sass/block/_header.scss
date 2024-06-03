@@ -7,84 +7,159 @@
     left: 0px;
     z-index: 100;
     transition: all 0.3s ease-in-out;
+
+    .header-top {
+        padding: 10px 0px;
+    
+        &__container {
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        &__logo {
+            img {
+                height: 40px;
+                // width: 140px;
+            }
+        }
+        &__info {
+            gap: 10px;
+            align-items: center;
+            .icon {
+                align-items: center;
+                justify-content: center;
+                color: var(--main-yellow); 
+            }
+            a {
+                @include regular;
+                color: var(--main-white);
+                font-weight: 500;
+                // text-transform: uppercase;
+            }
+            .text {
+                @include regular;
+                color: var(--main-white);
+                font-weight: 500;
+                // text-transform: uppercase;
+            }
+        }
+    }
+
+    .header-bottom {
+        .sub-menu {
+            .nav__link {
+                color:var(--dark-color);
+            }
+        }
+        &__container {
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .nav {
+            height: 100%;
+    
+            &__list {
+                height: 50px;
+                align-items: center;
+            }
+    
+            &__item {
+                position: relative;
+                // padding-right: 16px;
+            }
+    
+            &__link {
+                @include regular;
+                color: var(--main-white);
+                font-weight: 500;
+                padding-right: 20px;
+                z-index: 100;
+            }
+        }
+    }
 }
 .header {
     width: 100%;
     background:var(--main-white);
     position: relative;
     transition: all 0.3s ease-in-out;
-}
-.header-top {
-    padding: 10px 0px;
 
-    &__container {
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &__logo {
-        img {
-            height: 40px;
-            // width: 140px;
-        }
-    }
-    &__info {
-        gap: 10px;
-        align-items: center;
-        .icon {
+    .header-top {
+        padding: 10px 0px;
+    
+        &__container {
             align-items: center;
-            justify-content: center;
-            color: var(--main-yellow); 
+            justify-content: space-between;
         }
-        a {
-            @include regular;
-            color: var(--main-white);
-            font-weight: 500;
-            // text-transform: uppercase;
+    
+        &__logo {
+            img {
+                height: 40px;
+                // width: 140px;
+            }
         }
-        .text {
-            @include regular;
-            color: var(--main-white);
-            font-weight: 500;
-            // text-transform: uppercase;
-        }
-    }
-}
-
-.header-bottom {
-    .sub-menu {
-        .nav__link {
-            color:var(--dark-color);
-        }
-    }
-    &__container {
-        height: 100%;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .nav {
-        height: 100%;
-
-        &__list {
-            height: 50px;
+        &__info {
+            gap: 10px;
             align-items: center;
+            .icon {
+                align-items: center;
+                justify-content: center;
+                color: var(--main-yellow); 
+            }
+            a {
+                @include regular;
+                color: var(--dark-color);
+                font-weight: 500;
+                // text-transform: uppercase;
+            }
+            .text {
+                @include regular;
+                color: var(--dark-color);
+                font-weight: 500;
+                // text-transform: uppercase;
+            }
         }
-
-        &__item {
-            position: relative;
-            // padding-right: 16px;
+    }
+    .header-bottom {
+        .sub-menu {
+            .nav__link {
+                color:var(--dark-color);
+            }
         }
-
-        &__link {
-            @include regular;
-            color: var(--main-white);
-            font-weight: 500;
-            padding-right: 20px;
-            z-index: 100;
+        &__container {
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .nav {
+            height: 100%;
+    
+            &__list {
+                height: 50px;
+                align-items: center;
+            }
+    
+            &__item {
+                position: relative;
+                // padding-right: 16px;
+            }
+    
+            &__link {
+                @include regular;
+                color: var(--dark-color);
+                font-weight: 500;
+                padding-right: 20px;
+                z-index: 100;
+            }
         }
     }
 }
+
+
+
 
 @include mq(tablet-wide, max) {
     .header-bottom {
