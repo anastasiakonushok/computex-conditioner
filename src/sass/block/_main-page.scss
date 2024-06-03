@@ -40,18 +40,40 @@
         padding: 30px;
         background:var(--main-white);
         border-radius: 8px;
+        box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
 
         h2 {
-            color:var( --dark-color);
+            color:var( --main-gray);
             text-transform: uppercase;
             font-weight: 800;
             margin-bottom: 15px;
+        }
+        p {
+            color:var(--main-white);
+        }
+        span {
+            display: inline-block;
         }
     }
     &__card--1 {
         position: relative;
         h2 {
             width: 60%;
+            margin-bottom: 30px;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            right:0;
+            display: block;
+            height: 170px;
+        }
+    }
+    &__card--3 {
+        position: relative;
+        h2 {
+            width: 60%;
+            margin-bottom: 30px;
         }
         img {
             position: absolute;
@@ -69,6 +91,7 @@
         img {
             display: block;
             width: 100%;
+            margin: 30px 0px;
         }
     }
     // &__card--3 {

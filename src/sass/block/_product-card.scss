@@ -17,7 +17,8 @@
     padding: 30px;
     background: var(--white-color);
     border-radius: 8px;
-
+    box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+    
     &__img {
         width: 100%;
         img {
@@ -54,6 +55,11 @@
                     font-weight: 600;
                 }
             }
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 10px 0px;
         }
     }
 }

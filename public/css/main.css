@@ -240,6 +240,7 @@ p {
   border: none;
   border-radius: 5px;
   font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
@@ -267,6 +268,7 @@ p {
   text-align: center;
   color: var(--main-white);
   padding: 15px 30px;
+  font-weight: 500;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -660,13 +662,23 @@ p {
   padding: 30px;
   background: var(--main-white);
   border-radius: 8px;
+  -webkit-box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+  box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
 }
 
 .info-section__card h2 {
-  color: var(--dark-color);
+  color: var(--main-gray);
   text-transform: uppercase;
   font-weight: 800;
   margin-bottom: 15px;
+}
+
+.info-section__card p {
+  color: var(--main-white);
+}
+
+.info-section__card span {
+  display: inline-block;
 }
 
 .info-section__card--1 {
@@ -675,9 +687,27 @@ p {
 
 .info-section__card--1 h2 {
   width: 60%;
+  margin-bottom: 30px;
 }
 
 .info-section__card--1 img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  height: 170px;
+}
+
+.info-section__card--3 {
+  position: relative;
+}
+
+.info-section__card--3 h2 {
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+.info-section__card--3 img {
   position: absolute;
   top: 0;
   right: 0;
@@ -693,6 +723,11 @@ p {
 
 .info-section__card--2 img {
   display: block;
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.map iframe {
   width: 100%;
 }
 
@@ -854,6 +889,8 @@ p {
   padding: 30px;
   background: var(--white-color);
   border-radius: 8px;
+  -webkit-box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+  box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
 }
 
 .product-card__img {
@@ -909,6 +946,12 @@ p {
 
 .product-card__row ul li p:nth-child(2) {
   font-weight: 600;
+}
+
+.product-card__row .price {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0px;
 }
 
 @supports (-webkit-appearance:none) {

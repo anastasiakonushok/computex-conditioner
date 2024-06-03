@@ -125,6 +125,7 @@ $breakpoints: ("phone": 400px,
     border: none;
     border-radius: $border-radius;
     font-size: $font-size;
+    font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
   
@@ -147,6 +148,7 @@ $breakpoints: ("phone": 400px,
     background-color: var(--main-gray);
     color: var(--main-white);
     padding: $padding;
+    font-weight: 500;
     border: none;
     border-radius: $border-radius;
     font-size: $font-size;
