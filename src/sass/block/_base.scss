@@ -56,7 +56,12 @@ p {
 .button-primary {
     @include button-yellow(15px 30px);
   }
-  
+.button-gray {
+    @include button-gray (15px 30px);
+}  
+.swiper-button-disabled {
+    display: none;
+}
 //   .button-secondary {
 //     @include button(#6c757d, #fff);
 //   }

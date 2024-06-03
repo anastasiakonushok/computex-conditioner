@@ -1,0 +1,16 @@
+extends layout/app
+
+block page 
+    include chunk/header
+    main.main 
+        section.catalog
+            .container 
+                .sidebar 
+                .catalog__grid 
+                    include chunk/card-catalog
+                    include chunk/card-catalog
+                    include chunk/card-catalog
+                    include chunk/card-catalog
+                    include chunk/card-catalog
+                    include chunk/card-catalog
+    include chunk/footer

@@ -30,11 +30,30 @@
     &__row {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 15px;
 
         .title {
             font-weight: 700;
             min-height: 50px;
+        }
+
+        ul {
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li {
+                justify-content: space-between;
+                
+
+                p:nth-child(1) {
+                    width: 70%;
+                    display: inline-block;
+                }
+                p:nth-child(2) {
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
