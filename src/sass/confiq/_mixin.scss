@@ -171,28 +171,23 @@ $breakpoints: ("phone": 400px,
   }
 //
 
-@mixin button-arrow($bg, $color,$border-color) {
+@mixin button($bg, $color) {
     font-weight: 400;
     font-size: var(--regular-font);
-    padding: 14px 32px;
+    padding: 15px 30px;
     background: $bg;
     color: $color;
-    display: inline-flex;
     line-height: 120%;
-    gap: 10px;
     font-weight: 500;
-    border-radius: 10px;
-    border: 1px solid $border-color;
-    align-items: center;
-    justify-content: center;
+    border-radius: 8px;
 
     &:hover {
-        background: darken($bg, 8%);
+        background: rgba($bg, 0.92); // Slightly darken the background
         transition: all 0.3s ease;
     }
 
     &:active {
-        background: darken($bg, 25%);
+        background: rgba($bg, 0.75); // Darken the background more
     }
 
 }
