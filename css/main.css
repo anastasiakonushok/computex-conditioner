@@ -321,10 +321,27 @@ p {
   padding: 90px 0px;
 }
 
+.catalog__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 60px;
+}
+
 .catalog__grid {
+  width: 75%;
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.sidebar {
+  width: 25%;
+  padding: 30px;
+  background: var(--main-white);
 }
 
 .footer {
@@ -679,7 +696,7 @@ p {
 
 .hero-container h1 {
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   color: var(--main-yellow);
 }
 
@@ -705,7 +722,6 @@ p {
 }
 
 .hero-container__img img {
-  max-height: 350px;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -719,6 +735,9 @@ p {
 
 .services-section__container {
   gap: 30px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .services-section__card span {
@@ -757,6 +776,7 @@ p {
   border-radius: 8px;
   -webkit-box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
   box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+  background: var(--main-yellow);
 }
 
 .info-section__card h2 {
@@ -772,10 +792,32 @@ p {
 
 .info-section__card span {
   display: inline-block;
+  font-weight: 400;
+  font-size: var(--regular-font);
+  padding: 15px 30px;
+  background: var(--main-white);
+  color: var(--dark-color);
+  line-height: 120%;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.info-section__card span:hover {
+  background: rgba(var(--main-white), 0.92);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.info-section__card span:active {
+  background: rgba(var(--main-white), 0.75);
 }
 
 .info-section__card--1 {
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 .info-section__card--1 h2 {
@@ -811,7 +853,6 @@ p {
 .info-section__card--2 {
   grid-column: 2;
   grid-row: 1/3;
-  background: var(--main-yellow);
 }
 
 .info-section__card--2 img {
