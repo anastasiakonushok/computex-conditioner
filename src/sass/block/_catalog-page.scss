@@ -18,3 +18,19 @@
     padding: 30px;
     background:var(--main-white);
 }
+
+
+@include mq(tablet-wide, max) {
+    .catalog {
+        &__container {
+            flex-direction: column;
+        }
+        &__grid {
+            width: 100%;
+            grid-template-columns: 1fr;
+        }
+    }
+    .sidebar {
+        width: 100%;
+    }
+ }

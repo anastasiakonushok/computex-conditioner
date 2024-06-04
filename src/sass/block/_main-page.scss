@@ -61,7 +61,7 @@
         position: relative;
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: contain;
+        background-size: cover;
         // background-attachment: fixed;
 
         h2 {
@@ -117,10 +117,7 @@
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto;
         }
-        // &__card--1 {
-        //     grid-column: 1/2;
-        //     grid-row: 1 ;
-        // }
+       
         &__card--2 {
             grid-column: 1/2;
             grid-row: 2 ;
