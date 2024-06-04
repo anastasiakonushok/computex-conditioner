@@ -28,4 +28,9 @@
         --h2-font: 1.3em;
         --h3-font: 1.1em;
     }
+    @include mq(phablet, max) {
+        --h1-font: 1.8em;
+        --h2-font: 1.1em;
+        --h3-font: 1em;
+    }
 }
