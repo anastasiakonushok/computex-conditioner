@@ -193,8 +193,11 @@
 
     .header-top {
         padding: 20px 0;
-    }
 
+        &__info {
+            display: none;
+        }
+    }
     .burger-menu {
         display: flex;
         flex-direction: column;
