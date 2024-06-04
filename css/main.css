@@ -1456,3 +1456,15 @@ p {
 
 }
 }
+
+@media only screen and (max-width: 559px) {
+  :root {
+    --h1-font: 1.8em;
+    --h2-font: 1.1em;
+    --h3-font: 1em;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
