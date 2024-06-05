@@ -353,45 +353,29 @@ p {
 
 .footer h3 {
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: var(--main-yellow);
 }
 
-.footer .contact__phone {
+.footer__phone {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 16px;
-  gap: 10px;
+  gap: 15px;
   color: var(--white-color);
 }
 
-.footer .contact__phone .text {
+.footer__phone .text {
   font: 18px/110% var(--title-font);
 }
 
-.footer .contact__email {
+.footer__local {
+  gap: 15px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 16px;
-  gap: 10px;
-  margin-top: 25px;
   color: var(--white-color);
-}
-
-.footer .contact__email .text {
-  font: 18px/110% var(--title-font);
-}
-
-.footer .contact-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .footer__wrapp {
@@ -1151,15 +1135,12 @@ p {
     transition: all 0.3s ease;
   }
 
-  .footer a:hover {
+  .footer__phone:hover,
+  .footer__local:hover {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    color: rgb(168, 188, 255);
-  }
-
-  .footer a:hover svg path {
-    fill: rgb(168, 188, 255);
+    color: var(--main-yellow);
   }
 
 @supports (-webkit-appearance:none) {
@@ -1271,7 +1252,7 @@ p {
   .footer__wrapp {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 60px;
   }
 
   .footer .contact,
