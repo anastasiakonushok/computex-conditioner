@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     display: flex;
     align-items:center;
     padding-top: 105px;
@@ -45,7 +45,11 @@
         }
     }
 }
-
+@include mq(tablet-wide, min) {
+    .hero {
+        background-attachment:fixed;
+    }
+}
 @include mq(tablet-wide, max) {
     .hero {
         background-position: 80% 50%;

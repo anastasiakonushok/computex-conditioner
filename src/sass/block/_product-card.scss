@@ -12,13 +12,20 @@
         }
     }
 }
-
+.swiper-product {
+    &__slide {
+        height: auto;
+    }
+}
 .product-card {
     padding: 30px;
     background: var(--white-color);
     border-radius: 8px;
     box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     &__img {
         width: 100%;
         img {

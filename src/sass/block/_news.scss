@@ -73,7 +73,10 @@
     &__content {
         padding: 16px;
         background: var(--white-color);
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
         .info {
             @include regular;
             color: var(--dark-color);
@@ -108,8 +111,8 @@
             overflow: hidden;
         }
         a {
-            display: inline-block;
             margin-top: 30px;
+            width: fit-content;
         }
     }
 }

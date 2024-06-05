@@ -72,8 +72,9 @@
     }
 }
 .button-up {
-    display: inline-block;
+    display: block;
     float: right;
+    color:var(--main-yellow);   
     cursor: pointer;
     padding: 16px 20px;
     background: #fff;
