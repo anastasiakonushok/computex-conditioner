@@ -11,6 +11,16 @@
             cursor: pointer;
         }
     }
+    &__title {
+        display: flex;
+        align-items:center;
+        gap: 30px;
+        a {
+            color:var(--main-yellow);
+            @include regular;
+            font-weight: 600;
+        }
+    }
 }
 .swiper-product {
     &__slide {
@@ -43,10 +53,7 @@
         flex-direction: column;
         gap: 15px;
 
-        .title {
-            font-weight: 700;
-            min-height: 50px;
-        }
+       
 
         ul {
             font-size: 14px;
@@ -67,10 +74,27 @@
             }
         }
     }
+    .title {
+        font-weight: 700;
+        min-height: 50px;
+        color:var(--dark-color);    
+    }
 }
 
 .price {
     font-size: 24px;
     font-weight: 700;
-    margin: 10px 0px;
+    margin: 30px 0px 15px 0px;
+}
+
+
+@include mq(tablet-wide, min) {
+    .product-card {
+        .title {
+            @include hover {
+                color:var(--main-yellow);
+                transition: all 0.3s ease;
+            }
+        }
+    }
 }

@@ -41,19 +41,29 @@ $(function () {
         $(window).scroll(function (event) {
             var st = $(this).scrollTop();
             if (st > lastScrollTop) {
-                $(".header").addClass("header_down");
-                $(".header").removeClass("header_up");
+                $("header").addClass("header_down");
+                $("header").removeClass("header_up");
+                $(".header-main").removeClass("header");
                 $(".button-up").addClass("scroll-top_down");
                 $(".button-up").removeClass("scroll-top_up");
             } else {
-                $(".header").addClass("header_up");
-                $(".header").removeClass("header_down");
+                $("header").addClass("header_up");
+                $(".header-main").addClass("header");
+                $("header").removeClass("header_down");
                 $(".button-up").addClass("scroll-top_up");
                 $(".button-up").removeClass("scroll-top_down");
             }
+
+            // Удаление класса header_up, если прокрутка почти до начала страницы
+            if (st < 150) {
+                $(".header-main").removeClass("header");
+                $(".header").removeClass("header_up");
+            }
+
             lastScrollTop = st;
         });
     });
+
 
     $(document).ready(function () {
         var lastScrollTopr = 0;
@@ -93,9 +103,9 @@ $(function () {
                         $svg.attr(
                             "viewBox",
                             "0 0 " +
-                                $svg.attr("height") +
-                                " " +
-                                $svg.attr("width")
+                            $svg.attr("height") +
+                            " " +
+                            $svg.attr("width")
                         );
                     }
                     $img.replaceWith($svg);
