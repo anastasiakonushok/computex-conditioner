@@ -9,9 +9,19 @@
         margin-bottom: 30px;
         color:var(--main-yellow);
     }
+    &__contact {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        svg {
+            width: 20px;
+        }
+    }
     &__phone {
         align-items: center;
-        margin-bottom: 16px;
         gap: 15px;
         color: var(--white-color);
 
@@ -22,7 +32,7 @@
         }
     }
 
-    &__local {
+    &__time,&__local {
         gap: 15px;
         align-items:center;
         color:var(--white-color);
@@ -37,7 +47,7 @@
         ul {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
         }
 
         a {
@@ -119,7 +129,7 @@
         }
     }
     .footer {
-        &__phone,&__local {
+        &__phone,&__time,&__local {
             @include hover {
                 color: var(--main-yellow);
             }
