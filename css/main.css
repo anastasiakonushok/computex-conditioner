@@ -1051,6 +1051,13 @@ p {
   max-height: 150px;
 }
 
+.product-card__info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .product-card__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1094,7 +1101,7 @@ p {
   font-weight: 600;
 }
 
-.product-card__row .price {
+.price {
   font-size: 24px;
   font-weight: 700;
   margin: 10px 0px;
