@@ -2,10 +2,11 @@
     padding-bottom: 90px;
     &__info {
         justify-content: space-between;
+        margin-bottom: 30px;
+        align-items:center;
     }
     &__nav {
         gap: 15px;
-        margin-bottom: 30px;
         .swiper-product-prev,.swiper-product-next {
             color: var(--main-yellow);
             cursor: pointer;
