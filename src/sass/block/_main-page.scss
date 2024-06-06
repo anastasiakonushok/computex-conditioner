@@ -145,7 +145,7 @@
     .info-section {
         &__card:hover {
             transition: all 0.3s ease;
-            box-shadow: 0 8px 40px 0 rgba(15, 111, 188, .32);
+            box-shadow: 0 8px 20px 0 rgba(2, 24, 44, 0.281);
         }
         &__card:hover > img {
             transform: scale(1.1);

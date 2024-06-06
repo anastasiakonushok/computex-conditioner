@@ -57,7 +57,7 @@ $(function () {
             // Удаление класса header_up, если прокрутка почти до начала страницы
             if (st < 150) {
                 $(".header-main").removeClass("header");
-                $(".header").removeClass("header_up");
+                $("header").removeClass("header_up");
             }
 
             lastScrollTop = st;

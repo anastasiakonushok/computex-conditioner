@@ -1230,6 +1230,8 @@ p {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     position: fixed;
+    -webkit-box-shadow: 0 8px 20px 0 rgba(2, 24, 44, 0.194);
+    box-shadow: 0 8px 20px 0 rgba(2, 24, 44, 0.194);
   }
 
   .nav__item:hover > .sub-menu {
@@ -1288,8 +1290,8 @@ p {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    -webkit-box-shadow: 0 8px 40px 0 rgba(15, 111, 188, 0.32);
-    box-shadow: 0 8px 40px 0 rgba(15, 111, 188, 0.32);
+    -webkit-box-shadow: 0 8px 20px 0 rgba(2, 24, 44, 0.281);
+    box-shadow: 0 8px 20px 0 rgba(2, 24, 44, 0.281);
   }
 
   .info-section__card:hover > img {
