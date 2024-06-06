@@ -1045,11 +1045,14 @@ p {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .section-product__nav {
   gap: 15px;
-  margin-bottom: 30px;
 }
 
 .section-product__nav .swiper-product-prev,
