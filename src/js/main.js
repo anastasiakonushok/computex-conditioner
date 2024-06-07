@@ -194,6 +194,11 @@ const swiperProduct = new Swiper(".swiper-product", {
         nextEl: ".swiper-product-next",
         prevEl: ".swiper-product-prev",
     },
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        // hide: false,
+        draggable: true,
+    },
     // autoplay: {
     //   delay: 3000,
     // },

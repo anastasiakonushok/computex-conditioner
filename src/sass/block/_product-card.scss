@@ -28,6 +28,7 @@
         height: auto;
     }
 }
+
 .product-card {
     padding: 30px;
     background: var(--white-color);
@@ -88,7 +89,21 @@
     margin: 30px 0px 15px 0px;
 }
 
-
+@include mq(tablet-wide, max) {
+    .section-product {
+        &__nav {
+            display: none;
+        }
+    }
+    .swiper-product-scrollbar.swiper-scrollbar-horizontal {
+        position: relative;
+        top: 0;
+        margin-bottom: 30px;
+    }
+    .swiper-scrollbar-drag {
+        background:var(--main-yellow);
+    }
+}
 @include mq(tablet-wide, min) {
     .product-card {
         .title {
@@ -97,5 +112,8 @@
                 transition: all 0.3s ease;
             }
         }
+    }
+    .swiper-product-scrollbar {
+        display: none;
     }
 }
