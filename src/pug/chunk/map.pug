@@ -1,11 +1,3 @@
-section.map 
-    .map__bg
-        .map__cover
-        div(style="position:relative;overflow:hidden;")
-            a(href="https://yandex.by/maps/org/computex/83749831694/?utm_medium=mapframe&utm_source=maps", style="color:#eee;font-size:12px;position:absolute;top:0px;") Computex
-            a(href="https://yandex.by/maps/155/gomel/category/copy_center/184107108/?utm_medium=mapframe&utm_source=maps", style="color:#eee;font-size:12px;position:absolute;top:14px;") Копировальный центр в Гомеле
-            a(href="https://yandex.by/maps/155/gomel/category/printing_services/184107124/?utm_medium=mapframe&utm_source=maps", style="color:#eee;font-size:12px;position:absolute;top:28px;") Полиграфические услуги в Гомеле
-            iframe(src="https://yandex.by/map-widget/v1/?from=mapframe&ll=31.015333%2C52.432652&mode=search&oid=83749831694&ol=biz&z=14.75", width="560", height="400", frameborder="1", allowfullscreen="true", style="position:relative;")
-    .map__info 
-        .container.map__container 
-            
+section.map-section
+      gmp-map(center="52.432777404785156,31.00490379333496" zoom="14" map-id="DEMO_MAP_ID")
+        gmp-advanced-marker(position="52.432777404785156,31.00490379333496" title="My location")
