@@ -9,11 +9,18 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto;
     }
+    &__card--1 {
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
     &__card {
         padding: 30px;
         border-radius:8px;
         position: relative;
         color:var(--main-white);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 
 }

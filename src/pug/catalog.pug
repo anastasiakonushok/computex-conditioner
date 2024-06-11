@@ -2,7 +2,16 @@ extends layout/app
 
 block page 
     include chunk/header
-    main.main 
+    main.main
+        section.section-breadcrumb  
+            .container 
+                ol.breadcrumb.flex
+                    li#breadcrumbs.breadcrumb__item
+                        span
+                        span
+                            a(href="./") Главная
+                            |  / 
+                            span.breadcrumb_last(aria-current="page") Каталог
         section.catalog
             .container.catalog__container
                 .sidebar

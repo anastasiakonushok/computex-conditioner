@@ -3,6 +3,15 @@ extends layout/app
 block page 
     include chunk/header
     main.main 
+        section.section-breadcrumb 
+            .container 
+                ol.breadcrumb.flex
+                    li#breadcrumbs.breadcrumb__item
+                        span
+                        span
+                            a(href="./") Главная
+                            |  / 
+                            span.breadcrumb_last(aria-current="page") Товар 1
         section.catalog-single
             .container.catalog-single__container
                 .catalog-single__body.flex
@@ -14,6 +23,7 @@ block page
                         p Настенный кондиционер Mild MLI-07RF/ MLO-07RF – это надежное и эффективное решение для обеспечения комфортного климата в вашем помещении. Он обладает высокой производительностью и удобными функциями, которые позволяют настроить и поддерживать комфортную температуру в помещении. Сердце кондиционера Mild – компрессор фирмы GMCC TOSHIBA, что увеличивает срок службы моделей и делает их абсолютно безопасными. Дисплей на передней панели внутреннего блока отображает настроенную пользователем температуру воздуха.
                         span 1200 BYN
                 .catalog-dingle__info
+                    h3 Характеристики
         include chunk/services
         include chunk/card-slider
         include chunk/map

@@ -39,3 +39,13 @@
   #map {
     height: 300px;
   }
+
+
+  @include mq(tablet-wide, max) {
+    .map-section {
+      &__info {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  }
