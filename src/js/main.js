@@ -8,7 +8,7 @@ async function initMap() {
     const map = new Map(document.getElementById("map"), {
         center: { lat: 52.432777404785156, lng: 31.00490379333496 },
         zoom: 16,
-        styles: [
+        styles:[
             {
                 "featureType": "all",
                 "elementType": "all",

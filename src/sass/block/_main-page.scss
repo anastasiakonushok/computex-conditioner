@@ -50,7 +50,10 @@
             margin-bottom: 15px;
         }
         p {
-            color:var(--main-white);
+            color:var(--dark-color);
+            @include regular;
+            font-weight: 600;
+            font-size: 18px;
         }
     }
     &__card--1 {
@@ -93,12 +96,7 @@
             display: block;
             height: 170px;
         }
-        span {
-            display: inline-block;
-            @include regular;
-            color:var(--dark-color);
-            font-weight: 600;
-            font-size: 18px;
+        p {
             width: 60%;
         }
     }
@@ -133,7 +131,15 @@
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto;
         }
-       
+        img {
+            display: none;
+        }
+        span {
+            display: none;
+        }
+        &__card--1 {
+            background-image: inherit!important;
+        }
         &__card--2 {
             grid-column: 1/2;
             grid-row: 2 ;

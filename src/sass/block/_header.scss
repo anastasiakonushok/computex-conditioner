@@ -85,7 +85,7 @@
     background:var(--main-white);
     position: relative;
     transition: all 0.3s ease-in-out;
-
+    z-index: 1000;
     .header-top {
         padding: 10px 0px;
     
