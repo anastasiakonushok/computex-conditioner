@@ -1,0 +1,19 @@
+.services {
+    background:var(--main-white);
+    padding: 90px 0px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    &___container {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+    }
+    &__card {
+        padding: 30px;
+        border-radius:8px;
+        position: relative;
+        color:var(--main-white);
+    }
+
+}

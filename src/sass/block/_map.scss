@@ -12,10 +12,23 @@
     &__container {
       position: relative;
     }
+    &__row {
+      align-items:center;
+      gap:10px;
+      color:var(--main-gray);
+      .text {
+        @include regular;
+        font-weight: 600;
+      }
+    }
     &__card {
       h3 {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
+        color:var(--dark-color);
       }
+    }
+    &__social {
+      color:var(--main-gray);
     }
     &__phons {
       flex-direction: column;

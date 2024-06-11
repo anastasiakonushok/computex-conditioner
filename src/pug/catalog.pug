@@ -5,7 +5,22 @@ block page
     main.main 
         section.catalog
             .container.catalog__container
-                .sidebar 
+                .sidebar
+                    .sidebar__wrapp 
+                        h3 Категории
+                        .sidebar__list.flex
+                            label.flex
+                                input(type="radio" name="category" value="category3")
+                                | Хиты продаж
+                            label.flex
+                                input(type="radio" name="category" value="category1")
+                                | 10-20 кв
+                            label.flex
+                                input(type="radio" name="category" value="category2")
+                                | 30-40 кв
+                            label.flex
+                                input(type="radio" name="category" value="category3")
+                                | 50-100 кв
                 .catalog__grid 
                     include chunk/card-catalog
                     include chunk/card-catalog
