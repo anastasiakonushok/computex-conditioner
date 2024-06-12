@@ -129,7 +129,7 @@
         }
     }
     .footer {
-        &__phone,&__time,&__local {
+        a {
             @include hover {
                 color: var(--main-yellow);
             }

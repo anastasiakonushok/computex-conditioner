@@ -1,0 +1,7 @@
+@include mq(tablet-wide, min) {
+    .swiper-nav-hover {
+        @include hover {
+            color:#DAAB3A;
+        }
+    }
+}

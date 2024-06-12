@@ -201,7 +201,10 @@
             background:#37424c;
         }
     }
-
+    .show-main {
+        background: #37424c;
+    }
+    
     .burger-menu {
         display: flex;
         flex-direction: column;
@@ -261,7 +264,11 @@
             margin-bottom: 16px;
         }
     }
-
+    .show-main {
+        .menu-item-has-children::after {
+            background-image:url("data:image/svg+xml;charset=utf8,%3Csvg width='27' height='14' viewBox='0 0 27 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26.4351 1.26306C27.1198 1.83997 27.1821 2.74274 26.6219 3.3789L26.4351 3.56116L14.8637 13.3112C14.179 13.8881 13.1076 13.9405 12.3526 13.4685L12.1363 13.3112L0.564864 3.56116C-0.18829 2.92656 -0.18829 1.89766 0.564864 1.26306C1.24955 0.68615 2.32097 0.633704 3.07597 1.10572L3.29227 1.26306L13.5 9.86401L23.7077 1.26306C24.4609 0.628459 25.682 0.628459 26.4351 1.26306Z' fill='%23FFFFFF'/%3E%3C/svg%3E")!important;
+        }
+    }
     .show {
         .menu-item-has-children {
             position: relative;

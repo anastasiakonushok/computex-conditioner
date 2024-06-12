@@ -24,3 +24,14 @@
     }
 
 }
+
+
+@include mq(tablet, min) {
+    .map-section {
+        &__social {
+            @include hover {
+                color:var(--main-white);
+            }
+        }
+    }
+}

@@ -369,6 +369,7 @@ $(function () {
     $(document).ready(function () {
         $(".burger-menu").click(function () {
             $(".burger-menu").toggleClass("burger-menu-active");
+            $(".header-main").toggleClass("show-main");
             $(".header-bottom").toggleClass("show");
             $("body").toggleClass("body-lock");
         });
