@@ -21,6 +21,13 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        span {
+            width: fit-content;
+        }
     }
 
 }
@@ -32,6 +39,38 @@
             @include hover {
                 color:var(--main-white);
             }
+        }
+    }
+}
+
+
+@include mq(tablet-wide, max) { 
+    .services {
+        &___container {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+        }
+        &__card {
+            gap: 30px;
+        }
+        &__card--1 {
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+    }
+}
+
+@include mq(tablet-wide, min) {
+    .services {
+        &__card:hover {
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px 0 rgba(2, 24, 44, 0.281);
+        }
+        &__card:hover > span {
+            background:#DAAB3A;
+            transition: all 0.3s ease;
+            color:var(--main-white); 
         }
     }
 }
