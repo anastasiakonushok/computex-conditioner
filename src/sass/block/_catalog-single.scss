@@ -41,6 +41,41 @@
             margin-bottom: 60px;
         }
     }
+    &__info {
+        h3 {
+            color:var(--main-yellow);
+            margin-bottom: 15px;
+        }
+    }
+    &__table {
+        width: 60%;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+          
+            th, td {
+              padding: 15px;
+              text-align: left;
+            }
+          
+            th {
+              border-bottom: 1px solid #ddd;
+            }
+          
+            tr {
+              border-left: none; // Убирает левую линию
+              border-right: none; // Убирает правую линию
+            }
+          
+            td {
+              border-top: none; // Убирает верхнюю линию
+              border-bottom: 1px dashed #ccc; // Добавляет пунктирную нижнюю линию
+            }
+            tr td:first-child {
+                font-weight: 600;
+            }
+          }
+    }
 }
 
 @include mq(tablet-wide, max) { 
