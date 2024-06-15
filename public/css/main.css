@@ -457,6 +457,72 @@ p {
   font-weight: 600;
 }
 
+.contact-section {
+  margin-top: 60px;
+}
+
+.contact-section h3 {
+  margin-bottom: 15px;
+  color: var(--dark-color);
+}
+
+.contact-section__wrapp {
+  gap: 60px;
+  background: var(--main-white);
+  padding: 30px;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+  box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+}
+
+.contact-section__row {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-section__info {
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-section .icon {
+  color: var(--main-yellow);
+}
+
+.contact-section .text {
+  font-size: var(--regular-font);
+  line-height: 140%;
+  font-weight: 400;
+  color: var(--dark-color);
+  font-weight: 500;
+}
+
+.contact-section a {
+  font-size: var(--regular-font);
+  line-height: 140%;
+  font-weight: 400;
+  color: var(--dark-color);
+  font-weight: 500;
+}
+
+.contact-section__phons {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-section__social {
+  color: var(--main-yellow);
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 30px;
@@ -1418,6 +1484,14 @@ p {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     color: var(--main-white);
+  }
+
+  .services__card--2 {
+    gap: 30px;
+  }
+
+  .services__card--3 {
+    gap: 30px;
   }
 
 @supports (-webkit-appearance:none) {
