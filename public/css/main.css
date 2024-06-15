@@ -1392,6 +1392,61 @@ p {
   margin: 30px 0px 15px 0px;
 }
 
+.certificates {
+  margin-bottom: 80px;
+}
+
+.certificates h2 {
+  color: var(--dark-color);
+}
+
+.certificates__info {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.certificates__nav {
+  margin-bottom: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 16px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.certificates .swiper-certificates-next,
+.certificates .swiper-certificates-prev {
+  color: var(--main-yellow);
+  cursor: pointer;
+}
+
+.certificates .swiper-certificates__slide {
+  gap: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #fff;
+  padding: 30px;
+}
+
+.certificates .swiper-certificates__slide p {
+  font-size: var(--regular-font);
+  line-height: 140%;
+  font-weight: 400;
+  color: var(--dark-color);
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 600;
+  text-align: center;
+}
+
 .services {
   background: var(--main-white);
   padding: 90px 0px;

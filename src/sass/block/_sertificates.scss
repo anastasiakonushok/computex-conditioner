@@ -1,0 +1,43 @@
+.certificates {
+    margin-bottom: 80px;
+
+    h2 {
+        color: var(--dark-color);
+    }
+
+    &__info {
+        justify-content: space-between;
+    }
+
+    &__nav {
+        margin-bottom: 30px;
+        justify-content: center;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .swiper-certificates-next,
+    .swiper-certificates-prev {
+        color:var(--main-yellow);
+        cursor: pointer;
+    }
+
+    .swiper-certificates {
+        &__slide {
+            gap: 16px;
+            flex-direction: column;
+            align-items: center;
+            background: #fff;
+            padding: 30px;
+
+            p {
+                @include regular;
+                color: var(--dark-color);
+                font-size: 18px;
+                line-height: 120%;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 import $ from "jquery";
 
+Fancybox.bind("[data-fancybox]", {});
+
 let map;
 
 async function initMap() {
