@@ -419,6 +419,44 @@ p {
   margin-bottom: 60px;
 }
 
+.catalog-single__info h3 {
+  color: var(--main-yellow);
+  margin-bottom: 15px;
+}
+
+.catalog-single__table {
+  width: 60%;
+}
+
+.catalog-single__table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.catalog-single__table table th,
+.catalog-single__table table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.catalog-single__table table th {
+  border-bottom: 1px solid #ddd;
+}
+
+.catalog-single__table table tr {
+  border-left: none;
+  border-right: none;
+}
+
+.catalog-single__table table td {
+  border-top: none;
+  border-bottom: 1px dashed #ccc;
+}
+
+.catalog-single__table table tr td:first-child {
+  font-weight: 600;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 30px;
@@ -1441,7 +1479,7 @@ p {
   }
 
   .header-bottom .nav__link:hover {
-    color: var(--main-yellow);
+    color: var(--main-yellow) !important;
   }
 
   .header-top {
