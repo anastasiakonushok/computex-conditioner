@@ -29,6 +29,7 @@
             align-items: center;
             background: #fff;
             padding: 30px;
+            border-radius:8px;
 
             p {
                 @include regular;
@@ -37,6 +38,19 @@
                 line-height: 120%;
                 font-weight: 600;
                 text-align: center;
+            }
+        }
+    }
+}
+
+@include mq(tablet-wide, min) {
+    .swiper-certificates {
+        &__slide {
+            @include hover {
+                background: var(--main-yellow);
+                p {
+                    color: #fff;
+                }
             }
         }
     }

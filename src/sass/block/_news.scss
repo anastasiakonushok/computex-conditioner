@@ -60,6 +60,17 @@
         // }
     }
 }
+.news-single-page  {
+    padding: 60px 0px 90px 0px;
+    color:var(--dark-color);
+    h1 {
+        margin-bottom: 30px;
+    }
+     p {
+        @include regular;
+        margin-bottom: 15px;
+     }
+}
 .news-single {
     background: #fff;
     position: relative;

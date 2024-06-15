@@ -1,0 +1,21 @@
+extends layout/app
+
+block page 
+    include chunk/header
+    main.main 
+        section.section-breadcrumb 
+            .container 
+                ol.breadcrumb.flex
+                    li#breadcrumbs.breadcrumb__item
+                        span
+                        span
+                            a(href="./") Главная
+                            |  / 
+                            span.breadcrumb_last(aria-current="page") Новость
+        section.news-single-page 
+            .container 
+                h1 Новость 1
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur maiores porro atque facilis, magni id voluptatibus non aliquam sequi ratione voluptates exercitationem similique minima ipsam accusantium possimus, est assumenda?
+        include chunk/card-slider
+        include chunk/map
+    include chunk/footer
