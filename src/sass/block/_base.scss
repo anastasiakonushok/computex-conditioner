@@ -74,6 +74,24 @@ p {
         color:var(--main-yellow);
     }
 }
+.section-404 {
+    height: calc(100vh - 115px);
+    h1 {
+        color:var(--main-yellow);
+        font-size: 12em;
+    }
+    &__container{
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items:center;
+    }
+}
 //   .button-secondary {
 //     @include button(#6c757d, #fff);
 //   }

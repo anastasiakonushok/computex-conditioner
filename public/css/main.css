@@ -335,6 +335,39 @@ p {
   color: var(--main-yellow);
 }
 
+.section-404 {
+  height: calc(100vh - 115px);
+}
+
+.section-404 h1 {
+  color: var(--main-yellow);
+  font-size: 12em;
+}
+
+.section-404__container {
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.section-404__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 30px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .popular-brand {
   padding: 90px 0px;
 }
