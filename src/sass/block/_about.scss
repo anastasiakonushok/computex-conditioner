@@ -1,0 +1,50 @@
+.section-about {
+    position: relative;
+    padding: 60px 0px 90px 0px;
+    &__cards {
+        position: relative;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+   &__card {
+        width: 65%;
+        h2 {
+            margin-bottom: 15px;
+        }
+   }
+    .scroll-about {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        height: 91%;
+        width: 1px;
+        &:before {
+            position: sticky;
+            top: calc(30% - 40px);
+            -webkit-transition: top 20s linear;
+            transition: top 20s linear;
+            display: block;
+            width: 3px;
+            height: 80px;
+            margin-left: -2px;
+            content: "";
+            background-color: var(--main-yellow);
+        }
+    }
+}
+
+@include mq(tablet-wide, max) {
+    .section-about {
+        .scroll-about {
+            display: none;
+        }
+        &__cards {
+            padding: 0;
+        }
+        &__card {
+            width: 100%;
+        }
+    } 
+}
