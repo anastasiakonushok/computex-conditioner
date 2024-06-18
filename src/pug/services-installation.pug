@@ -21,7 +21,7 @@ block page
         section.services-img 
             .container.flex.services-img__container
                 .services-img__img 
-                    img(src="./img/repair.jpg", alt="")
+                    img(src="./img/repair.jpg" alt="")
                 .services-img__content.inner-content 
                     h2 Что включает процесс монтажа кондиционеров?
                     ul 
@@ -29,6 +29,29 @@ block page
                         li Подготовка места установки. Это может включать демонтаж старых систем, подготовку стен и других поверхностей.
                         li Монтаж внутреннего и внешнего блоков. Специалисты аккуратно устанавливают и подключают все необходимые компоненты системы.
                         li Проверка системы и демонстрация работы. После установки проводится тестирование системы, чтобы убедиться в её исправной работе.
+        section.services-price 
+            .container 
+                h2 Прайс по услуге
+                .services-price__table 
+                    table.styled-table
+                        thead 
+                            tr 
+                                td Услуга
+                                td Цена
+                        tbody 
+                            tr 
+                                td Товар 1
+                                td 10 р
+                            tr 
+                                td Мотаж 2
+                                td 20 р
+                            tr 
+                                td Мотаж 2
+                                td 20 р
+                            tr 
+                                td Мотаж 2
+                                td 20 р
+        include chunk/reference
         include chunk/services
         include chunk/card-slider
         include chunk/map
