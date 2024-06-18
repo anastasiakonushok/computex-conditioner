@@ -156,7 +156,7 @@ table {
   --main-white: #ffffff;
   --body-font: "Open Sans", sans-serif;
   --title-font: "Montserrat", sans-serif;
-  --h1-font: 2.5em;
+  --h1-font: 2em;
   --h2-font: 1.5em;
   --h3-font: 1.25em;
   --regular-font: 1em;
@@ -366,6 +366,18 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.inner-content {
+  color: var(--dark-color);
+}
+
+.inner-content h2 {
+  margin-bottom: 15px;
+}
+
+.inner-content p {
+  margin-bottom: 10px;
 }
 
 .popular-brand {
@@ -1000,6 +1012,7 @@ p {
   text-transform: uppercase;
   margin-bottom: 30px;
   color: var(--main-yellow);
+  font-size: 2.5em;
 }
 
 .hero__container a {
@@ -1028,6 +1041,23 @@ p {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.hero-services {
+  padding: 60px 0px;
+}
+
+.hero-services .breadcrumb {
+  margin-bottom: 30px;
+  color: var(--main-white);
+}
+
+.hero-services .breadcrumb_last {
+  color: var(--main-white);
+}
+
+.hero-services h1 {
+  color: var(--main-white);
 }
 
 .services-section {
@@ -1649,6 +1679,31 @@ p {
   width: fit-content;
 }
 
+.services-text {
+  padding: 90px 0px;
+}
+
+.services-img__container {
+  gap: 60px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.services-img__img {
+  width: 45%;
+}
+
+.services-img__img img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.services-img__content {
+  width: 50%;
+}
+
 @supports (-webkit-appearance:none) {
 
 }
@@ -1734,7 +1789,7 @@ p {
 
   .sub-menu {
     position: absolute;
-    min-width: 250px;
+    min-width: 270px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
