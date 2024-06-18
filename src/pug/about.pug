@@ -3,7 +3,7 @@ extends layout/app
 block page 
     include chunk/header
     main.main 
-        section.section-breadcrumb 
+        section.hero-services(style='background-image: linear-gradient(rgba(43, 60, 77, 0.74), rgba(43, 60, 77, 0.74)), url("./img/fon-2.png"); ')
             .container 
                 ol.breadcrumb.flex
                     li#breadcrumbs.breadcrumb__item
@@ -12,6 +12,7 @@ block page
                             a(href="./") Главная
                             |  / 
                             span.breadcrumb_last(aria-current="page") О компании
+                h1 О компании
         section.section-about
             .container.section-about__container
                 .section-about__cards 

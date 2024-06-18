@@ -18,6 +18,7 @@
             text-transform: uppercase;
             margin-bottom: 30px;
             color:var(--main-yellow);
+            font-size: 2.5em;
         }
         a {
             margin-top: 30px;
@@ -43,6 +44,21 @@
             object-fit: cover;
             border-radius: 8px;
         }
+    }
+}
+
+
+.hero-services {
+    padding: 60px 0px;
+    .breadcrumb {
+        margin-bottom: 30px;
+        color:var(--main-white);
+    }
+    .breadcrumb_last {
+        color:var(--main-white);
+    }
+    h1 {
+        color:var(--main-white);
     }
 }
 @include mq(tablet-wide, min) {

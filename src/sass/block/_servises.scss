@@ -32,7 +32,26 @@
 
 }
 
-
+.services-text {
+    padding: 90px 0px;
+}
+.services-img {
+    &__container {
+        gap: 60px;
+        justify-content: space-between;
+    }
+    &__img {
+        width: 45%;
+        img {
+            display: block;
+            width: 100%;
+            border-radius:8px;
+        }
+    }
+    &__content {
+        width: 50%;
+    }
+}
 @include mq(tablet, min) {
     .map-section {
         &__social {

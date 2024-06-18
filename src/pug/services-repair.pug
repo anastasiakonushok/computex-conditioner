@@ -1,0 +1,19 @@
+extends layout/app
+
+block page 
+    include chunk/header
+    main.main 
+        section.hero-services(style='background-image: linear-gradient(rgba(43, 60, 77, 0.74), rgba(43, 60, 77, 0.74)), url("./img/fon-2.png"); ')
+            .container 
+                ol.breadcrumb.flex
+                    li#breadcrumbs.breadcrumb__item
+                        span
+                        span
+                            a(href="./") Главная
+                            |  / 
+                            span.breadcrumb_last(aria-current="page") Ремонт кондиционеров
+                h1 Ремонт кондиционеров
+        include chunk/services
+        include chunk/card-slider
+        include chunk/map
+    include chunk/footer

@@ -92,6 +92,15 @@ p {
         align-items:center;
     }
 }
+.inner-content {
+    color:var(--dark-color);
+    h2 {
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+}
 //   .button-secondary {
 //     @include button(#6c757d, #fff);
 //   }
