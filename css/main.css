@@ -424,6 +424,63 @@ p {
   cursor: pointer;
 }
 
+.tabs {
+  width: 100%;
+  display: block;
+}
+
+.tab-links {
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.tab-links li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.tab-links li a {
+  font-size: var(--regular-font);
+  line-height: 140%;
+  font-weight: 400;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 15px 30px;
+  background: #ddd;
+  color: #333;
+  border-radius: 8px;
+}
+
+.tab-links li a.active {
+  background: #009879;
+  color: #fff;
+}
+
+.tab-links .active a {
+  background: var(--main-yellow);
+  color: var(--main-white);
+}
+
+.tab-content {
+  -webkit-box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+  box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.tab-content h2 {
+  margin-bottom: 30px;
+}
+
+.tab-content .tab {
+  display: none;
+}
+
+.tab-content .tab.active {
+  display: block;
+}
+
 .popular-brand {
   padding: 90px 0px;
 }
@@ -1819,6 +1876,10 @@ p {
   margin-top: 90px;
   padding: 90px 0px;
   background: var(--main-white);
+}
+
+.services-tab {
+  padding-top: 90px;
 }
 
 @supports (-webkit-appearance:none) {
