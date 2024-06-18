@@ -147,6 +147,59 @@ p {
         }
     }
 }
+.tabs {
+    width: 100%;
+    display: block;
+}
+
+.tab-links {
+    margin-bottom: 40px;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin-right: 5px;
+
+        a {
+            @include regular;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 15px 30px;
+            background: #ddd;
+            color: #333;
+            border-radius: 8px;
+            
+            &.active {
+                background: #009879;
+                color: #fff;
+            }
+        }
+    }
+    .active {
+        a {
+            background:var(--main-yellow);
+            color:var(--main-white);
+        }
+    }
+}
+
+.tab-content {
+    // border: 1px solid #ddd;
+    box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    h2 {
+        margin-bottom: 30px;
+    }
+    .tab {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
 
 @include mq(tablet-wide, max) { 
     .styled-table {

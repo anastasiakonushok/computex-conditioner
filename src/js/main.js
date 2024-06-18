@@ -10,7 +10,7 @@ async function initMap() {
     const map = new Map(document.getElementById("map"), {
         center: { lat: 52.432777404785156, lng: 31.00490379333496 },
         zoom: 16,
-        styles:[
+        styles: [
             {
                 "featureType": "all",
                 "elementType": "all",
@@ -366,6 +366,21 @@ initMap();
 
 
 $(function () {
+    $(document).ready(function () {
+        $('.tab-links a').on('click', function (e) {
+            e.preventDefault();
+
+            var currentAttrValue = $(this).attr('href');
+
+            // Show/Hide Tabs
+            $('.tab' + currentAttrValue).addClass('active').siblings().removeClass('active');
+
+            // Change/remove current tab to active
+            $(this).parent('li').addClass('active').siblings().removeClass('active');
+        });
+    });
+
+
     //Бургер меню
 
     $(document).ready(function () {

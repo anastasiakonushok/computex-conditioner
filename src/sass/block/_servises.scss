@@ -57,6 +57,9 @@
     padding: 90px 0px;
     background:var(--main-white);
 }
+.services-tab {
+    padding-top: 90px;
+}
 @include mq(tablet, min) {
     .map-section {
         &__social {
