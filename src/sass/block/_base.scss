@@ -95,7 +95,7 @@ p {
 .inner-content {
     color:var(--dark-color);
     h2 {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
     p {
         margin-bottom: 10px;
@@ -105,7 +105,11 @@ p {
         list-style: disc;
         li {
             margin-bottom: 15px;
+            @include regular;
         }
+    }
+    b {
+        font-weight: 700;
     }
 }
 
