@@ -383,7 +383,7 @@ p {
 }
 
 .inner-content ul {
-  padding-left: 10px;
+  padding-left: 15px;
   list-style: disc;
 }
 
@@ -1962,6 +1962,13 @@ p {
 }
 
 @media only screen and (min-width: 1024px) {
+  .header-top a:hover {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color: var(--main-yellow);
+  }
+
   .header_down {
     top: -200px;
     -webkit-transition: all 0.3s ease;

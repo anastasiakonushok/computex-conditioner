@@ -305,7 +305,13 @@
 }
 
 @include mq(tablet-wide, min) {
-    
+    .header-top {
+        a {
+            @include hover {
+                color:var(--main-yellow);
+            }
+        }
+    }
     .header_down {
         top: -200px;
         transition: all 0.3s ease;
