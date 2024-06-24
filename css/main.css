@@ -156,6 +156,7 @@ table {
   --main-white: #ffffff;
   --body-font: "Open Sans", sans-serif;
   --title-font: "Montserrat", sans-serif;
+  --h1-special: 2.5em;
   --h1-font: 2em;
   --h2-font: 1.5em;
   --h3-font: 1.25em;
@@ -1116,13 +1117,14 @@ p {
   -ms-flex-align: center;
   align-items: center;
   gap: 60px;
+  height: 70%;
 }
 
 .hero__container h1 {
   text-transform: uppercase;
   margin-bottom: 30px;
   color: var(--main-yellow);
-  font-size: 2.5em;
+  font-size: var(--h1-special);
 }
 
 .hero__container a {
@@ -1144,6 +1146,7 @@ p {
 
 .hero__img {
   width: 50%;
+  height: 100%;
 }
 
 .hero__img img {
@@ -1151,6 +1154,7 @@ p {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 8px;
+  height: 100%;
 }
 
 .hero-services {
@@ -2107,6 +2111,7 @@ p {
 
 @media only screen and (max-width: 1023px) {
   :root {
+    --h1-special: 2em;
     --h1-font: 2em;
     --h2-font: 1.3em;
     --h3-font: 1.1em;
@@ -2265,6 +2270,10 @@ p {
 
   .header-main .show {
     background: #37424c;
+  }
+
+  .header-main .header-bottom .sub-menu .nav__link {
+    color: var(--white-color);
   }
 
   .show-main {
@@ -2529,6 +2538,7 @@ p {
 
 @media only screen and (max-width: 559px) {
   :root {
+    --h1-special: 1.8em;
     --h1-font: 1.8em;
     --h2-font: 1.1em;
     --h3-font: 1em;
