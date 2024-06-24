@@ -44,7 +44,7 @@
             }
         }
     }
-
+    
     .header-bottom {
         .sub-menu {
             .nav__link {
@@ -200,7 +200,21 @@
         .show {
             background:#37424c;
         }
+        .header-bottom {
+            .sub-menu {
+                .nav__link {
+                    color:var(--white-color);
+                }
+            }
+        }
     }
+    // .header-main {
+    //     .sub-menu {
+    //         .nav__link {
+    //             color:var(--white-color);
+    //         }
+    //     }
+    // }
     .show-main {
         background: #37424c;
     }
