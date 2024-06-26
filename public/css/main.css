@@ -161,7 +161,7 @@ table {
   --h2-font: 1.5em;
   --h3-font: 1.25em;
   --regular-font: 1em;
-  --font-128: 8em;
+  --font-128: 5em;
 }
 
 .section-about {
@@ -169,48 +169,61 @@ table {
   padding: 60px 0px 90px 0px;
 }
 
-.section-about__cards {
-  position: relative;
-  padding: 0px 30px;
+.section-about__content {
+  gap: 60px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.section-about__article {
+  width: 70%;
+  margin-bottom: 90px;
+}
+
+.section-about__article h2 {
+  margin-bottom: 30px;
+  color: var(--main-yellow);
+}
+
+.section-about__article p {
+  font-style: italic;
+  font-size: var(--h3-font);
+  font-weight: 700;
+}
+
+.section-about__text {
+  width: 50%;
+}
+
+.section-about__text p span {
+  font-size: var(--h3-font);
+  color: var(--main-yellow);
+  font-weight: 700;
+  font-style: italic;
+}
+
+.section-about__number {
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   gap: 30px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.section-about__card {
-  width: 65%;
+.section-about__number span {
+  line-height: 100%;
+  font-weight: 800;
+  color: var(--main-yellow);
+  font-size: var(--font-128);
 }
 
-.section-about__card h2 {
-  margin-bottom: 15px;
-}
-
-.section-about .scroll-about {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  height: 91%;
-  width: 1px;
-}
-
-.section-about .scroll-about:before {
-  background: var(--main-yellow);
-  position: sticky;
-  top: calc(30% - 40px);
-  -webkit-transition: top 20s linear;
-  -o-transition: top 20s linear;
-  transition: top 20s linear;
-  display: block;
-  border-radius: 3px;
-  width: 5px;
-  height: 80px;
-  margin-left: -2px;
-  content: "";
+.section-about__counter p {
+  margin-top: 15px;
+  font-weight: 500;
 }
 
 * {
@@ -2122,17 +2135,25 @@ p {
     --h1-font: 2em;
     --h2-font: 1.3em;
     --h3-font: 1.1em;
+    --font-128: 3em;
   }
 
-  .section-about .scroll-about {
-    display: none;
+  .section-about__article {
+    width: 100%;
   }
 
-  .section-about__cards {
-    padding: 0;
+  .section-about__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
-  .section-about__card {
+  .section-about__text {
+    width: 100%;
+  }
+
+  .section-about__number {
     width: 100%;
   }
 
@@ -2549,6 +2570,7 @@ p {
     --h1-font: 1.8em;
     --h2-font: 1.1em;
     --h3-font: 1em;
+    --font-128: 2em;
   }
 
 @supports (-webkit-appearance:none) {

@@ -1,51 +1,69 @@
 .section-about {
     position: relative;
     padding: 60px 0px 90px 0px;
-    &__cards {
-        position: relative;
-        padding: 0px 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+    &__content {
+        gap: 60px;
+        justify-content: space-between;
     }
-   &__card {
-        width: 65%;
+    &__article  {
+        width: 70%;
+        margin-bottom: 90px;
         h2 {
-            margin-bottom: 15px;
+            margin-bottom: 30px;
+            color:var(--main-yellow);
         }
-   }
-    .scroll-about {
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-        height: 91%;
-        width: 1px;
-        &:before {
-            position: sticky;
-            top: calc(30% - 40px);
-            -webkit-transition: top 20s linear;
-            transition: top 20s linear;
-            display: block;
-            border-radius:3px;
-            width: 5px;
-            height: 80px;
-            margin-left: -2px;
-            content: "";
-            background-color: var(--main-yellow);
+        p {
+            font-style: italic;
+            font-size: var(--h3-font);
+            font-weight: 700;
+        }
+    }
+    &__text {
+        width: 50%;
+
+        p {
+            span {
+                font-size: var(--h3-font);
+                color:var(--main-yellow);
+                font-weight: 700;
+                font-style: italic;
+            }
+        }
+    }
+    &__number {
+        width: 40%;
+        display: flex;
+        gap: 30px;
+       justify-content: space-between;
+
+        span {
+            line-height: 100%;
+            font-weight: 800;
+            color:var(--main-yellow);
+            font-size: var(--font-128);
+        }
+    }
+    &__counter {
+        p {
+            margin-top: 15px;
+            font-weight: 500;
         }
     }
 }
 
 @include mq(tablet-wide, max) {
     .section-about {
-        .scroll-about {
-            display: none;
-        }
-        &__cards {
-            padding: 0;
-        }
-        &__card {
-            width: 100%;
-        }
+       &__article {
+        width: 100%;
+       }
+       &__content {
+        flex-direction: column;
+       }
+       &__text {
+        width: 100%;
+       }
+       &__number {
+        width: 100%;
+       }
     } 
 }
