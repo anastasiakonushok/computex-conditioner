@@ -1,7 +1,10 @@
+.services-section.services-section-main {
+    margin: 0;
+}
 .services-section {
     background:var(--main-white);
     padding: 90px 0px;
-
+    margin: 90px 0px;
     &__container {
         gap: 30px;
         justify-content: space-between;

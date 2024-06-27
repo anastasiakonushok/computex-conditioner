@@ -199,6 +199,10 @@
         }
         .show {
             background:#37424c;
+
+            .header-top {
+                background: #37424c;
+            }
         }
         .header-bottom {
             .sub-menu {
@@ -207,6 +211,7 @@
                 }
             }
         }
+        
     }
     // .header-main {
     //     .sub-menu {
@@ -215,9 +220,7 @@
     //         }
     //     }
     // }
-    .show-main {
-        background: #37424c;
-    }
+    
     
     .burger-menu {
         display: flex;
