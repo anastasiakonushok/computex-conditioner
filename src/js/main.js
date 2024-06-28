@@ -5,392 +5,49 @@ $(document).ready(function () {
     // Fancybox initialization
     Fancybox.bind("[data-fancybox]", {});
 
-    // Google Maps initialization
-    // let map;
-    // async function initMap() {
-    //     const { Map } = await google.maps.importLibrary("maps");
-
-    //     map = new Map(document.getElementById("map"), {
-    //         center: { lat: 52.432777404785156, lng: 31.00490379333496 },
-    //         zoom: 16,
-    //         styles: [
-    //             // Your map styles
-    //             {
-    //                 "featureType": "all",
-    //                 "elementType": "all",
-    //                 "stylers": [
-    //                     {
-    //                         "saturation": "0"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "all",
-    //                 "elementType": "geometry",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "simplified"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "all",
-    //                 "elementType": "geometry.fill",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "simplified"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "all",
-    //                 "elementType": "geometry.stroke",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "simplified"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "all",
-    //                 "elementType": "labels.text",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "off"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "administrative",
-    //                 "elementType": "all",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "simplified"
-    //                     },
-    //                     {
-    //                         "color": "#35495F"
-    //                     },
-    //                     {
-    //                         "lightness": "-15"
-    //                     },
-    //                     {
-    //                         "gamma": "1.00"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "administrative",
-    //                 "elementType": "labels.icon",
-    //                 "stylers": [
-    //                     {
-    //                         "saturation": "-100"
-    //                     },
-    //                     {
-    //                         "lightness": "20"
-    //                     },
-    //                     {
-    //                         "visibility": "simplified"
-    //                     },
-    //                     {
-    //                         "gamma": ".5"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "landscape",
-    //                 "elementType": "geometry.fill",
-    //                 "stylers": [
-    //                     {
-    //                         "lightness": "60"
-    //                     },
-    //                     {
-    //                         "saturation": "0"
-    //                     },
-    //                     {
-    //                         "color": "#35495F"
-    //                     },
-    //                     {
-    //                         "visibility": "simplified"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "landscape.natural",
-    //                 "elementType": "all",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "simplified"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "landscape.natural",
-    //                 "elementType": "geometry.fill",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "on"
-    //                     },
-    //                     {
-    //                         "color": "#a0aebd"
-    //                     },
-    //                     {
-    //                         "saturation": "0"
-    //                     },
-    //                     {
-    //                         "lightness": "12"
-    //                     },
-    //                     {
-    //                         "gamma": "1.00"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "landscape.natural",
-    //                 "elementType": "labels.text",
-    //                 "stylers": [
-    //                     {
-    //                         "lightness": "100"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "landscape.natural",
-    //                 "elementType": "labels.icon",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "off"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "landscape.natural.landcover",
-    //                 "elementType": "all",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "off"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "landscape.natural.terrain",
-    //                 "elementType": "all",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "simplified"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "poi",
-    //                 "elementType": "all",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "simplified"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "poi",
-    //                 "elementType": "geometry.fill",
-    //                 "stylers": [
-    //                     {
-    //                         "color": "#35495F"
-    //                     },
-    //                     {
-    //                         "saturation": "0"
-    //                     },
-    //                     {
-    //                         "lightness": "-7"
-    //                     },
-    //                     {
-    //                         "gamma": "1.00"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "road",
-    //                 "elementType": "all",
-    //                 "stylers": [
-    //                     {
-    //                         "gamma": "6.14"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "road",
-    //                 "elementType": "geometry.fill",
-    //                 "stylers": [
-    //                     {
-    //                         "color": "#35495F"
-    //                     },
-    //                     {
-    //                         "saturation": "0"
-    //                     },
-    //                     {
-    //                         "lightness": "-18"
-    //                     },
-    //                     {
-    //                         "gamma": "1.00"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "road",
-    //                 "elementType": "labels.text",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "simplified"
-    //                     },
-    //                     {
-    //                         "saturation": "0"
-    //                     },
-    //                     {
-    //                         "lightness": "100"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "road",
-    //                 "elementType": "labels.icon",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "off"
-    //                     },
-    //                     {
-    //                         "invert_lightness": true
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "transit",
-    //                 "elementType": "all",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "simplified"
-    //                     },
-    //                     {
-    //                         "hue": "#ffc200"
-    //                     },
-    //                     {
-    //                         "saturation": "100"
-    //                     },
-    //                     {
-    //                         "gamma": "0.85"
-    //                     },
-    //                     {
-    //                         "lightness": "17"
-    //                     },
-    //                     {
-    //                         "weight": "1.00"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "transit",
-    //                 "elementType": "labels.icon",
-    //                 "stylers": [
-    //                     {
-    //                         "hue": "#ffc200"
-    //                     },
-    //                     {
-    //                         "saturation": "-100"
-    //                     },
-    //                     {
-    //                         "gamma": "0.5"
-    //                     },
-    //                     {
-    //                         "weight": "1.00"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "water",
-    //                 "elementType": "all",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "on"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "water",
-    //                 "elementType": "geometry",
-    //                 "stylers": [
-    //                     {
-    //                         "lightness": "80"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "water",
-    //                 "elementType": "geometry.fill",
-    //                 "stylers": [
-    //                     {
-    //                         "color": "#efc337"
-    //                     },
-    //                     {
-    //                         "saturation": "0"
-    //                     },
-    //                     {
-    //                         "lightness": "35"
-    //                     },
-    //                     {
-    //                         "gamma": "1.00"
-    //                     }
-    //                 ]
-    //             },
-    //             {
-    //                 "featureType": "water",
-    //                 "elementType": "labels.text",
-    //                 "stylers": [
-    //                     {
-    //                         "visibility": "off"
-    //                     }
-    //                 ]
-    //             }
-    //         ]
-    //     });
-
-    //     new google.maps.Marker({
-    //         position: { lat: 52.432777404785156, lng: 31.00490379333496 },
-    //         map: map,
-    //         title: 'My location',
-    //         icon: {
-    //             path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
-    //             scale: 10,
-    //             fillColor: '#ffc200',
-    //             fillOpacity: 1,
-    //             strokeWeight: 1,
-    //             strokeColor: '#ffc200'
-    //         }
-    //     });
-    // }
-    // initMap();
-
-    //map
-
-    async function initMap() {
-        // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
-        await ymaps3.ready;
-
-        const { YMap, YMapDefaultSchemeLayer } = ymaps3;
-
-        // Иницилиазируем карту
-        const map = new YMap(
-            // Передаём ссылку на HTMLElement контейнера
-            document.getElementById('map'),
-
-            // Передаём параметры инициализации карты
-            {
-                location: {
-                    // Координаты центра карты
-                    center: [37.588144, 55.733842],
-
-                    // Уровень масштабирования
-                    zoom: 10
-                }
+    ymaps.ready(init);
+    function init() {
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [52.432777404785156, 31.00490379333496],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 18,
+            controls: ['zoomControl']
+        });
+        myMap.behaviors.disable('scrollZoom');
+        var zoomControl = myMap.controls.get('zoomControl');
+        zoomControl.options.set({
+            size: 'small' // или 'large' для больших кнопок
+        });
+        var myPlacemark = new ymaps.GeoObject({
+            geometry: {
+                type: "Point",
+                coordinates: [52.432777404785156, 31.00490379333496]
             }
-        );
+        });
+        myMap.geoObjects.add(myPlacemark);
+
+        var layerStyles = {
+            // Пример стилей
+            styles: {
+                // Пример стиля для улиц
+                street: {
+                    // Цвет фона
+                    backgroundColor: "#f2f2f2",
+                    // Цвет линии
+                    strokeColor: "#000000"
+                },
+                // Другие стили
+            }
+        };
+
+        var defaultSchemeLayer = new ymaps.map.layer.YMapDefaultSchemeLayer(layerStyles);
+        myMap.layers.add(defaultSchemeLayer);
         map.addChild(new YMapDefaultSchemeLayer({
             customization: [
                 {
@@ -7099,11 +6756,7 @@ $(document).ready(function () {
                 }
             ]
         }));
-        // Добавляем слой для отображения схематической карты
-        map.addChild(new YMapDefaultSchemeLayer());
     }
-    
-    initMap();
 
     //
 
