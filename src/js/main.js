@@ -30,10 +30,6 @@ $(document).ready(function () {
                 type: "Point",
                 coordinates: [52.432777404785156, 31.00490379333496]
             }
-            ,
-            properties: {
-                iconContent: 'Computex', // Описание (title) отметки
-            }
         },
             {
                 // preset: 'twirl#redIcon',
@@ -44,6 +40,32 @@ $(document).ready(function () {
     }
 
     //
+    $(document).ready(function () {
+        $('a[href*="#"]').on('click', function (event) {
+            // Проверяем, что якорь ссылки существует на странице
+            if (this.hash !== "") {
+                // Запрещаем стандартное поведение ссылки
+                event.preventDefault();
+
+                // Получаем якорь ссылки
+                var hash = this.hash;
+
+                // Определяем положение целевого элемента от верха страницы
+                var targetOffset = $(hash).offset().top;
+
+                // Дополнительное условие для отступа 150px от верха
+                var scrollOffset = targetOffset - 90;
+
+                // Анимируем скролл к якорю
+                $('html, body').animate({
+                    scrollTop: scrollOffset
+                }, 800, function () {
+                    // Добавляем якорь к URL, когда анимация завершена (для стандартного поведения)
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
 
     $('.counter').each(function () {
         var startNumber = 0;

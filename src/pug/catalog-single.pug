@@ -11,6 +11,8 @@ block page
                         span
                             a(href="./") Главная
                             |  / 
+                            a(href="./") 20-30 кв.
+                            |  / 
                             span.breadcrumb_last(aria-current="page") Товар 1
         section.catalog-single
             .container.catalog-single__container
@@ -18,14 +20,13 @@ block page
                     .catalog-single__img 
                         img(src="./img/img-card.jpg" alt="")  
                     .catalog-single__content 
-                        .category.flex 
-                            span Категория:
-                            a(href="") 10-20 кв 
                         h1 Кондиционер
                         p Настенный кондиционер Mild MLI-07RF/ MLO-07RF – это надежное и эффективное решение для обеспечения комфортного климата в вашем помещении.
-                        span.price 1200 BYN
-                        a(href="./contact.html").button-primary Купить 
-                .catalog-single__block.flex
+                        a(href="#info").all-desc Все характеристики
+                        .catalog-single__price.flex
+                            span.price 1200 BYN
+                            a(href="./contact.html").button-primary Купить 
+                .catalog-single__block.flex#info
                     .catalog-single__description
                         h3 Характеристики
                         .catalog-single__table
