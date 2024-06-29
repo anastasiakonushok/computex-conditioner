@@ -133,6 +133,7 @@ $(document).ready(function () {
     var lastScrollTop = 0;
     $(window).scroll(function () {
         var st = $(this).scrollTop();
+
         if (st > lastScrollTop) {
             $("header").addClass("header_down").removeClass("header_up");
             $(".header-main").removeClass("header");
@@ -146,6 +147,9 @@ $(document).ready(function () {
         if (st < 150) {
             $(".header-main").removeClass("header");
             $("header").removeClass("header_up");
+            $(".button-up").removeClass("scroll-top_up");
+        } else {
+            $(".button-up").addClass("scroll-top_up");
         }
 
         lastScrollTop = st;
