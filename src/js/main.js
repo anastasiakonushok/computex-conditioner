@@ -16,7 +16,7 @@ $(document).ready(function () {
             center: [52.432777404785156, 31.00490379333496],
             // Уровень масштабирования. Допустимые значения:
             // от 0 (весь мир) до 19.
-            zoom: 18,
+            zoom: 17,
             controls: ['zoomControl']
         });
         myMap.behaviors.disable('scrollZoom');
@@ -54,7 +54,7 @@ $(document).ready(function () {
                 var targetOffset = $(hash).offset().top;
 
                 // Дополнительное условие для отступа 150px от верха
-                var scrollOffset = targetOffset - 90;
+                var scrollOffset = targetOffset - 150;
 
                 // Анимируем скролл к якорю
                 $('html, body').animate({
@@ -66,6 +66,7 @@ $(document).ready(function () {
             }
         });
     });
+
 
     $('.counter').each(function () {
         var startNumber = 0;
