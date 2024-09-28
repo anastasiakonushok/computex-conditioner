@@ -159,7 +159,6 @@ p {
 }
 
 .tab-links {
-    margin-bottom: 40px;
     list-style: none;
 
     li {
@@ -191,6 +190,7 @@ p {
 
 .tab-content {
     // border: 1px solid #ddd;
+    margin-top: 60px;
     box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
     padding: 30px;
     background: #fff;

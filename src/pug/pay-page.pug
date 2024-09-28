@@ -17,8 +17,12 @@ block page
             .container 
                 .tabs
                     ul.tab-links
-                        li.active: a(href="#tab1") Оплата
-                        li: a(href="#tab2") Гарантия
+                        li.active 
+                            a(href="#tab1") Оплата
+                        li 
+                            a(href="#tab2") Гарантия
+                        li
+                            a(href="#tab3") Рассрочка
                     .tab-content
                         #tab1.tab.active.inner-content
                             h2 Оплата
@@ -35,6 +39,9 @@ block page
                         #tab2.tab.inner-content
                             h2 Гарантия на кондиционеры
                             p Мы ценим доверие наших клиентов и стремимся обеспечить высочайшее качество нашей продукции. Все кондиционеры, приобретенные у нас, имеют гарантию, которая защищает вас от возможных производственных дефектов и неполадок.                        
+                        #tab3.tab.inner-content
+                            h2 Рассрочка
+                            p Мы предлагаем удобные условия доставки по всей стране. Вы можете выбрать доставку курьером на дом или самовывоз из нашего офиса. Условия доставки зависят от вашего местоположения и суммы заказа.
         include chunk/services-block
         include chunk/card-slider
         include chunk/map

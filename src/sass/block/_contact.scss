@@ -39,6 +39,11 @@
     }
     &__social {
         color:var(--main-yellow);
+        display: inline-block;
+        padding: 0px 5px;
+    }
+    &__social:first-child {
+        padding-left: 0px;
     }
 }
 
@@ -47,6 +52,9 @@
         &__wrapp {
             flex-direction: column;
             gap: 30px;
+        }
+        &__info {
+            width: 100%;
         }
     }
 }

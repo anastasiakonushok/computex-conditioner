@@ -13,7 +13,7 @@ $(document).ready(function () {
             // Порядок по умолчанию: «широта, долгота».
             // Чтобы не определять координаты центра карты вручную,
             // воспользуйтесь инструментом Определение координат.
-            center: [52.432777404785156, 31.00490379333496],
+            center: [52.432787, 31.004957],
             // Уровень масштабирования. Допустимые значения:
             // от 0 (весь мир) до 19.
             zoom: 17,
@@ -28,7 +28,7 @@ $(document).ready(function () {
         var myPlacemark = new ymaps.GeoObject({
             geometry: {
                 type: "Point",
-                coordinates: [52.432777404785156, 31.00490379333496]
+                coordinates: [52.432787, 31.004957]
             }
         },
             {
@@ -63,23 +63,32 @@ $(document).ready(function () {
 
 
 
-    // Tab navigation
+    // Tab navigation with URL change but no jump to anchor
     $('.tab-links a').on('click', function (e) {
         e.preventDefault();
 
         var currentAttrValue = $(this).attr('href');
 
+        // Активируем нужный таб и скрываем остальные
         $('.tab' + currentAttrValue).addClass('active').siblings().removeClass('active');
 
+        // Активируем текущую ссылку и деактивируем другие
         $(this).parent('li').addClass('active').siblings().removeClass('active');
+
+        // Меняем URL, но не перескакиваем к якорю
+        history.pushState(null, null, currentAttrValue);
     });
 
-    // Burger menu
-    $(".burger-menu").click(function () {
-        $(".burger-menu").toggleClass("burger-menu-active");
-        $(".header-main, .header-bottom").toggleClass("show-main show");
-        $("body").toggleClass("body-lock");
+    // Если URL содержит якорь, активируем соответствующий таб при загрузке страницы
+    $(document).ready(function () {
+        var hash = window.location.hash;
+
+        if (hash) {
+            $('.tab-links a[href="' + hash + '"]').click();
+        }
     });
+
+
 
     // Accordion
     $(".accordion__title").on("click", function (e) {
@@ -125,23 +134,6 @@ $(document).ready(function () {
         }
 
         lastScrollTop = st;
-    });
-
-
-    // Initialize Swipers
-    const swiperMain = new Swiper(".swiper-main", {
-        loop: true,
-        autoplay: {
-            delay: 5000,
-        },
-        pagination: {
-            el: ".swiper-main__pagination",
-            type: "fraction",
-        },
-        navigation: {
-            nextEl: ".swiper-main__next",
-            prevEl: ".swiper-main__prev",
-        },
     });
 
     const swiperNews = new Swiper(".swiper-news", {
@@ -212,31 +204,12 @@ $(document).ready(function () {
         },
     });
 
-    const swiperCertificates = new Swiper(".swiper-certificates", {
-        spaceBetween: 30,
-        navigation: {
-            nextEl: ".swiper-certificates-next",
-            prevEl: ".swiper-certificates-prev",
-        },
-        breakpoints: {
-            350: {
-                slidesPerView: 1,
-            },
-            650: {
-                slidesPerView: 3,
-            },
-            1170: {
-                slidesPerView: 4,
-            },
-        },
-    });
-
     const swiperBrandChanel = new Swiper(".swiper-brand-chanel", {
         speed: 2000,
         spaceBetween: 60,
         loop: true,
         autoplay: {
-            delay: 5000,
+            delay: 1,
             disableOnInteraction: false,
         },
         breakpoints: {
@@ -252,6 +225,32 @@ $(document).ready(function () {
         },
     });
 
+    (function ($) { // Begin jQuery
+        $(function () { // DOM ready
+            // If a link has a dropdown, add sub menu toggle.
+            $('.menu-item-has-children a').click(function (e) {
+                $(this).siblings('.sub-menu').toggle();
+                // Close one dropdown when selecting another
+                this.classList.toggle('active-menu');
+                $('.sub-menu').not($(this).siblings()).hide();
+                $('.menu-item-has-children a').not(this).removeClass('active-menu');
+                e.stopPropagation();
+            });
+            // Clicking away from dropdown will remove the dropdown class
+            $('html').click(function () {
+                $('.sub-menu').hide();
+                $('.menu-item-has-children a').removeClass('active-menu');
+            });
+
+            // Hamburger to X toggle
+            $('#nav-toggle').click(function () {
+                // Add or remove 'show' class to 'nav' element when burger menu is clicked
+                $('.header-bottom').toggleClass('show');
+                $(this).toggleClass('burger-menu-active');
+                $("body").toggleClass("body-lock");
+            });
+        }); // end DOM ready
+    })(jQuery); // end jQuery
 });
 
 
