@@ -69,12 +69,13 @@ p {
     display: none;
 }
 
-.breadcrumb {
-    a {
-        color:var(--main-yellow);
+.section-breadcrumb-black {
+    margin-bottom: 30px;
+    #breadcrumbs {
+        color:var(--main-gray);
     }
 }
-p#breadcrumbs {
+#breadcrumbs {
     margin-bottom: 30px;
     color:var(--main-white);
     a {
@@ -257,6 +258,9 @@ p#breadcrumbs {
   }
   .next,.prev {
     border:none;
+  }
+  .main-wrapper {
+    min-height: calc(100vh - 100px); /* Высота окна минус высота футера */
   }
   
 @include mq(tablet-wide, min) { 
