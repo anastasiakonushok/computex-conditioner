@@ -8,11 +8,11 @@ const notify = require("gulp-notify");
 const autoprefixer = require("gulp-autoprefixer");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
-const shorthand =require("gulp-shorthand");
-const  groupCssMediaQueries = require("gulp-group-css-media-queries");
-const  sass = require("gulp-sass")(require("sass"));
-const  sassGlob = require("gulp-sass-glob");
-const  webpCss = require("gulp-webp-css");
+const shorthand = require("gulp-shorthand");
+const groupCssMediaQueries = require("gulp-group-css-media-queries");
+const sass = require("gulp-sass")(require("sass"));
+const sassGlob = require("gulp-sass-glob");
+const webpCss = require("gulp-webp-css");
 
 
 //scss
@@ -21,23 +21,25 @@ const scss = () => {
     .pipe(
       plumber({
         errorHandler: notify.onError(error => ({
-          title:"css",
-          message: error.message
-        })
-
-        ),
+          title: "css",
+          message: `Error in file: ${error.relativePath} at line ${error.line}, column ${error.column}`,
+        })),
       })
     )
     .pipe(sassGlob())
     .pipe(sass())
-    .pipe(webpCss())
-    .pipe(autoprefixer())
-    .pipe(shorthand())
-    .pipe(groupCssMediaQueries())
-    .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }))
-    .pipe(rename({suffix:".min"}))
-    .pipe(csso())
+    .on('data', (file) => {
+      console.log('Processing file:', file.path);
+    })
+    // .pipe(webpCss())
+    // .pipe(autoprefixer())
+    // .pipe(shorthand())
+    // .pipe(groupCssMediaQueries())
+    // .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }))
+    // .pipe(rename({ suffix: ".min" }))
+    // .pipe(csso())
     .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }));
 };
+
 
 module.exports = scss;

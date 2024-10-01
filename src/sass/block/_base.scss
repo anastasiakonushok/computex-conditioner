@@ -68,14 +68,14 @@ p {
 .swiper-button-disabled {
     display: none;
 }
-
 .section-breadcrumb-black {
-    margin-bottom: 30px;
-    #breadcrumbs {
+    margin-top: 30px;
+    p#breadcrumbs {
+        margin-bottom: 30px;
         color:var(--main-gray);
     }
 }
-#breadcrumbs {
+p#breadcrumbs {
     margin-bottom: 30px;
     color:var(--main-white);
     a {
@@ -195,9 +195,8 @@ p {
 }
 
 .tab-content {
-    // border: 1px solid #ddd;
     margin-top: 60px;
-    box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+    box-shadow: 2px -1px 13px 6px rgba(173, 172, 172, 0.22);
     padding: 30px;
     background: #fff;
     border-radius: 8px;
@@ -312,10 +311,3 @@ p {
         }
     }
 }
-//   .button-secondary {
-//     @include button(#6c757d, #fff);
-//   }
-  
-//   .button-success {
-//     @include button(#28a745, #fff);
-//   }
