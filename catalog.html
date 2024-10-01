@@ -59,9 +59,7 @@
     <main class="main">
       <section class="section-breadcrumb"> 
         <div class="container"> 
-          <ol class="breadcrumb flex">
-            <li class="breadcrumb__item" id="breadcrumbs"><span></span><span><a href="./">Главная</a> / <span class="breadcrumb_last" aria-current="page">Каталог</span></span></li>
-          </ol>
+          <p id="breadcrumbs"><span><span><a href="./">Главная</a></span> / <span class="breadcrumb_last" aria-current="page">Контакты</span></span></p>
         </div>
       </section>
       <section class="catalog">
@@ -70,18 +68,20 @@
             <div class="sidebar__wrapp"> 
               <h3>Категории</h3>
               <div class="sidebar__list flex">
-                <label class="flex">
-                  <input type="radio" name="category" value="category3">Хиты продаж
-                </label>
-                <label class="flex">
-                  <input type="radio" name="category" value="category1">10-20 кв
-                </label>
-                <label class="flex">
-                  <input type="radio" name="category" value="category2">30-40 кв
-                </label>
-                <label class="flex">
-                  <input type="radio" name="category" value="category3">50-100 кв
-                </label>
+                <div class="form sidebar__form">
+                  <label class="flex">
+                    <input type="radio" name="category" value="category3">Хиты продаж
+                  </label>
+                  <label class="flex">
+                    <input type="radio" name="category" value="category1">10-20 кв
+                  </label>
+                  <label class="flex">
+                    <input type="radio" name="category" value="category2">30-40 кв
+                  </label>
+                  <label class="flex">
+                    <input type="radio" name="category" value="category3">50-100 кв
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -230,6 +230,12 @@
               </div>
               <div class="product-card__info flex"> <span class="price">1500 BYN</span><a class="button-gray" href="./catalog-single.html">Подробнее   </a></div>
             </article>
+          </div>
+        </div>
+        <div class="flex pagination-wrapp">
+          <div class="pagination"><span class="page-numbers current" aria-current="page">1</span><a class="page-numbers" href="./">2</a><a class="next page-numbers" href="./"><span class="custom-arrow custom-arrow--next">→ </span></a></div>
+          <div class="total-products">
+            <p>Всего товаров: 13</p>
           </div>
         </div>
       </section>
