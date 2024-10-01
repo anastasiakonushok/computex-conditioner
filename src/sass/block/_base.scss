@@ -68,10 +68,15 @@ p {
 .swiper-button-disabled {
     display: none;
 }
-.section-breadcrumb {
-    padding-top: 30px;
-}
+
 .breadcrumb {
+    a {
+        color:var(--main-yellow);
+    }
+}
+p#breadcrumbs {
+    margin-bottom: 30px;
+    color:var(--main-white);
     a {
         color:var(--main-yellow);
     }
@@ -173,7 +178,7 @@ p {
             background: #ddd;
             color: #333;
             border-radius: 8px;
-            
+            transition: all 0.3s ease-in;
             &.active {
                 background: #009879;
                 color: #fff;
@@ -207,6 +212,65 @@ p {
     }
 }
 
+.pagination-wrapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .pagination {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .page-numbers {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .page-numbers.current {
+    background-color: var(--main-gray);
+    color: #fff;
+  }
+  
+  .page-numbers:hover {
+    background-color: #ddd;
+  }
+  
+  .custom-arrow--next {
+    font-size: 18px;
+    padding: 0 8px;
+  }
+  
+  .total-products p {
+    font-size: 16px;
+    color: #333;
+  }
+  .next,.prev {
+    border:none;
+  }
+  
+@include mq(tablet-wide, min) { 
+    .tab-links { 
+        li {
+            a {
+                @include hover {
+                    background:#acacac;
+                    transition: all 0.3s ease-in;
+                }
+            }
+        }
+    }
+}
 @include mq(tablet-wide, max) { 
     .styled-table {
         border:none;

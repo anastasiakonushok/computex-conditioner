@@ -5,31 +5,31 @@ block page
     main.main
         section.section-breadcrumb  
             .container 
-                ol.breadcrumb.flex
-                    li#breadcrumbs.breadcrumb__item
-                        span
+                p#breadcrumbs
+                    span
                         span
                             a(href="./") Главная
-                            |  / 
-                            span.breadcrumb_last(aria-current="page") Каталог
+                        |  / 
+                        span.breadcrumb_last(aria-current="page") Контакты
         section.catalog
             .container.catalog__container
                 .sidebar
                     .sidebar__wrapp 
                         h3 Категории
                         .sidebar__list.flex
-                            label.flex
-                                input(type="radio" name="category" value="category3")
-                                | Хиты продаж
-                            label.flex
-                                input(type="radio" name="category" value="category1")
-                                | 10-20 кв
-                            label.flex
-                                input(type="radio" name="category" value="category2")
-                                | 30-40 кв
-                            label.flex
-                                input(type="radio" name="category" value="category3")
-                                | 50-100 кв
+                            .form.sidebar__form
+                                label.flex
+                                    input(type="radio" name="category" value="category3")
+                                    | Хиты продаж
+                                label.flex
+                                    input(type="radio" name="category" value="category1")
+                                    | 10-20 кв
+                                label.flex
+                                    input(type="radio" name="category" value="category2")
+                                    | 30-40 кв
+                                label.flex
+                                    input(type="radio" name="category" value="category3")
+                                    | 50-100 кв
                 .catalog__grid 
                     include chunk/card-catalog
                     include chunk/card-catalog
@@ -37,4 +37,12 @@ block page
                     include chunk/card-catalog
                     include chunk/card-catalog
                     include chunk/card-catalog
+            div.flex.pagination-wrapp
+                div.pagination
+                    span.page-numbers.current(aria-current="page") 1
+                    a.page-numbers(href="./") 2
+                    a.next.page-numbers(href="./")
+                        span.custom-arrow.custom-arrow--next → 
+                div.total-products
+                    p Всего товаров: 13
     include chunk/footer

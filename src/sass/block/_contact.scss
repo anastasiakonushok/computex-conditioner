@@ -27,11 +27,13 @@
         @include regular;
         color:var(--dark-color);
         font-weight: 500;
+        transition: all 0.3s ease-in;
     }
     a {
         @include regular;
         color:var(--dark-color);
         font-weight: 500;
+        transition: all 0.3s ease-in;
     }
     &__phons {
         flex-direction: column;
@@ -46,7 +48,22 @@
         padding-left: 0px;
     }
 }
-
+@include mq(tablet-wide, min) { 
+    .contact-section {
+         a {
+            @include hover {
+                color:var(--main-yellow);
+                    transition: all 0.3s ease-in;
+                }
+               .text {
+                @include hover {
+                    color:var(--main-yellow);
+                        transition: all 0.3s ease-in;
+                    }
+               }
+            }
+    }
+}
 @include mq(tablet-wide, max) {
     .contact-section {
         &__wrapp {

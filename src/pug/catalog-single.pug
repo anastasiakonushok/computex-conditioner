@@ -5,15 +5,12 @@ block page
     main.main 
         section.section-breadcrumb 
             .container 
-                ol.breadcrumb.flex
-                    li#breadcrumbs.breadcrumb__item
-                        span
+                p#breadcrumbs
+                    span
                         span
                             a(href="./") Главная
-                            |  / 
-                            a(href="./") 20-30 кв.
-                            |  / 
-                            span.breadcrumb_last(aria-current="page") Товар 1
+                        |  / 
+                        span.breadcrumb_last(aria-current="page") Контакты
         section.catalog-single
             .container.catalog-single__container
                 .catalog-single__body.flex
@@ -59,10 +56,10 @@ block page
                     .catalog-single__info.guarantee 
                         .guarantee__block.flex
                             .guarantee__row.flex
-                                img(src="./img/garanty.svg", alt="")
+                                img(src="./img/garanty.svg" alt="")
                                 p Гарантия 5 лет
                             .guarantee__row.flex
-                                img(src="./img/card.svg", alt="")
+                                img(src="./img/card.svg" alt="")
                                 p Возможность рассрочки до 12 месяцев
         include chunk/services-block
         include chunk/card-slider

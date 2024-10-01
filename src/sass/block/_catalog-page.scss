@@ -20,17 +20,24 @@
         background:var(--main-white);
         border-radius:8px;
     }
+    &__form {
+        display: inline-flex;
+        gap: 15px;
+        flex-direction: column;
+        label {
+            display: flex;
+            gap: 10px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
     h3 {
         margin-bottom: 30px;
     }
-    &__list {
-        flex-direction: column;
-        gap: 15px;
-
-        label {
-            gap: 10px;
-            align-items: center;
-        }
+    .button-form {
+        margin-top: 30px;
     }
 }
 

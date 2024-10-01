@@ -5,13 +5,12 @@ block page
     main.main 
         section.section-breadcrumb 
             .container 
-                ol.breadcrumb.flex
-                    li#breadcrumbs.breadcrumb__item
-                        span
+                p#breadcrumbs
+                    span
                         span
                             a(href="./") Главная
-                            |  / 
-                            span.breadcrumb_last(aria-current="page") Все новости
+                        |  / 
+                        span.breadcrumb_last(aria-current="page") Контакты
         section.section-all-news 
             .container.section-all-news__grid
                 .news-single__content.section-all-news__content
