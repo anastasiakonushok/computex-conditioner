@@ -1370,9 +1370,6 @@ p#breadcrumbs a {
   align-items: center;
   gap: 10px;
   color: var(--main-gray);
-}
-
-.map-section__row a {
   transition: all 0.3s ease-in;
 }
 
