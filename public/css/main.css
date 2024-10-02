@@ -1372,11 +1372,16 @@ p#breadcrumbs a {
   color: var(--main-gray);
 }
 
+.map-section__row a {
+  transition: all 0.3s ease-in;
+}
+
 .map-section__row .text {
   font-size: var(--regular-font);
   line-height: 140%;
   font-weight: 400;
   font-weight: 600;
+  transition: all 0.3s ease-in;
 }
 
 .map-section__card h3 {
@@ -1388,6 +1393,7 @@ p#breadcrumbs a {
   color: var(--main-gray);
   display: inline-block;
   padding: 0 5px;
+  transition: all 0.3s ease-in;
 }
 
 .map-section__phons {
@@ -2039,10 +2045,12 @@ p#breadcrumbs a {
   .map-section__card a:hover {
     transition: all 0.3s ease;
     color: var(--main-white);
+    transition: all 0.3s ease-in;
   }
 
   .map-section__card a:hover .text {
     color: var(--main-white);
+    transition: all 0.3s ease-in;
   }
 
   .product-card .title:hover {

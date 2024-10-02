@@ -16,9 +16,13 @@
       align-items:center;
       gap:10px;
       color:var(--main-gray);
+      a {
+        transition: all 0.3s ease-in;
+      }
       .text {
         @include regular;
         font-weight: 600;
+        transition: all 0.3s ease-in;
       }
     }
     &__card {
@@ -31,6 +35,7 @@
       color:var(--main-gray);
       display: inline-block;
       padding: 0 5px;
+      transition: all 0.3s ease-in;
     }
     &__phons {
       flex-direction: column;
@@ -55,8 +60,10 @@
       a {
         @include hover {
           color:var(--main-white);
+          transition: all 0.3s ease-in;
           .text {
             color:var(--main-white);
+            transition: all 0.3s ease-in;
           }
         }
         
