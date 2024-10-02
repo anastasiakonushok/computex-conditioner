@@ -930,6 +930,7 @@ p#breadcrumbs a {
   font-weight: 400;
   color: var(--main-white);
   font-weight: 500;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-main .header-top__info .text {
@@ -938,6 +939,7 @@ p#breadcrumbs a {
   font-weight: 400;
   color: var(--main-white);
   font-weight: 500;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-main .header-bottom__container {
@@ -1724,6 +1726,10 @@ p#breadcrumbs a {
 .accordion__title {
   cursor: pointer;
   position: relative;
+  gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .accordion .show-accordion::after {
@@ -1737,7 +1743,7 @@ p#breadcrumbs a {
   content: "";
   transition: all 0.5s ease-in-out;
   display: block;
-  position: absolute;
+  position: relative;
   right: 0px;
   top: 40%;
   width: 20px;
@@ -1952,8 +1958,17 @@ p#breadcrumbs a {
     border-bottom: 1px solid rgb(214, 214, 214);
   }
 
-  .header .header-top a:hover {
+  .header .header-top__info a:hover {
     transition: all 0.3s ease;
+    color: var(--main-yellow);
+  }
+
+  .header .header-top__info:hover {
+    transition: all 0.3s ease;
+    color: var(--main-yellow);
+  }
+
+  .header .header-top__info:hover .text {
     color: var(--main-yellow);
   }
 
@@ -1971,6 +1986,24 @@ p#breadcrumbs a {
 
   .header-main .header-top {
     border-bottom: 1px solid rgb(214, 214, 214);
+  }
+
+  .header-main .header-top__info a:hover {
+    transition: all 0.3s ease;
+    color: var(--main-yellow);
+  }
+
+  .header-main .header-top__info a:hover .text {
+    color: var(--main-yellow);
+  }
+
+  .header-main .header-top__info:hover {
+    transition: all 0.3s ease;
+    color: var(--main-yellow);
+  }
+
+  .header-main .header-top__info:hover .text {
+    color: var(--main-yellow);
   }
 
   .header-main .header-bottom .nav a:hover {
@@ -2048,6 +2081,11 @@ p#breadcrumbs a {
   .map-section__card a:hover .text {
     color: var(--main-white);
     transition: all 0.3s ease-in;
+  }
+
+  .news__link:hover {
+    transition: all 0.3s ease;
+    color: #DAAB3A;
   }
 
   .product-card .title:hover {
