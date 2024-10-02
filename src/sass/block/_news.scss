@@ -157,14 +157,15 @@
         box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
     }
 }
-// @include mq(tablet-wide, min) {
-//     &__info {
-//         .link:hover:after {
-//             width: 100%;
-//             opacity: 0.9;
-//         }   
-//     }
-// }
+@include mq(tablet-wide, min) {
+    .news {
+        &__link {
+            @include hover {
+                color:#DAAB3A;
+            }
+        }
+    }
+}
 @include mq(tablet-wide, max) {
     .news {
         &__info {

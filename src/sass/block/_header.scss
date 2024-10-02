@@ -34,12 +34,14 @@
                 @include regular;
                 color: var(--main-white);
                 font-weight: 500;
+                transition: all 0.3s ease-in-out;
                 // text-transform: uppercase;
             }
             .text {
                 @include regular;
                 color: var(--main-white);
                 font-weight: 500;
+                transition: all 0.3s ease-in-out;
                 // text-transform: uppercase;
             }
         }
@@ -286,29 +288,6 @@
         
     }
 
-
-    // .header-bottom {
-    //     display: none;
-
-    //     .nav {
-    //         width: 100%;
-    //         overflow-y: auto;
-
-    //         &__list {
-    //             align-items: flex-start;
-    //             gap: 15px;
-    //         }
-
-    //         li {
-    //             width: 100%;
-    //         }
-
-    //         a {
-    //             font-size: 24px;
-    //         }
-    //     }
-    // }
-
     .header-top {
 
         &__info {
@@ -408,9 +387,19 @@
     .header {
         .header-top {
             border-bottom: 1px solid rgb(214, 214, 214);
-            a {
+            &__info {
+                a {
+                    @include hover {
+                        color:var(--main-yellow);
+                    }
+                }
+            }
+            &__info {
                 @include hover {
                     color:var(--main-yellow);
+                    .text {
+                        color:var(--main-yellow);   
+                    }
                 }
             }
         }
@@ -432,6 +421,25 @@
     .header-main {
         .header-top {
             border-bottom: 1px solid rgb(214, 214, 214);
+            &__info {
+                a {
+                    @include hover {
+                        color:var(--main-yellow);
+                        .text {
+                            color:var(--main-yellow);   
+                        }
+                    }
+                }
+            }
+            &__info {
+                @include hover {
+                    color:var(--main-yellow);
+                    .text {
+                        color:var(--main-yellow);   
+                    }
+                }
+            }
+            
         }
         .header-bottom {
             .nav {
