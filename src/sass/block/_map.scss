@@ -16,9 +16,8 @@
       align-items:center;
       gap:10px;
       color:var(--main-gray);
-      a {
-        transition: all 0.3s ease-in;
-      }
+      transition: all 0.3s ease-in;
+      
       .text {
         @include regular;
         font-weight: 600;
