@@ -5,7 +5,7 @@ const app = require("../config/app.js");
 //Плагины
 const plumber = require("gulp-plumber");
 const notify = require("gulp-notify");
-const autoprefixer = require("gulp-autoprefixer");
+// const autoprefixer = require('gulp-autoprefixer');
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const shorthand = require("gulp-shorthand");
@@ -32,13 +32,15 @@ const scss = () => {
       console.log('Processing file:', file.path);
     })
     // .pipe(webpCss())
-    // .pipe(autoprefixer())
-    // .pipe(shorthand())
-    // .pipe(groupCssMediaQueries())
+    // .pipe(autoprefixer().default())
+    .pipe(shorthand())
+    .pipe(groupCssMediaQueries())
     // .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }))
-    // .pipe(rename({ suffix: ".min" }))
-    // .pipe(csso())
-    .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }));
+    .pipe(dest(path.scss.dest))
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(csso())
+    .pipe(dest(path.scss.dest,));
+    // .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }));
 };
 
 

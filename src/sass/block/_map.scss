@@ -49,7 +49,22 @@
 //   /* Ваши стили для отметки */
 //   filter: none;
 // }
-
+@include mq(tablet-wide, min) {
+  .map-section {
+    &__card {
+      a {
+        @include hover {
+          color:var(--main-white);
+          .text {
+            color:var(--main-white);
+          }
+        }
+        
+      }
+      
+    }
+  }
+}
 
 
   @include mq(tablet-wide, max) {
