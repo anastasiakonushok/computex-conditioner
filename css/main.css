@@ -1211,7 +1211,7 @@ p#breadcrumbs a {
 }
 
 .services-section {
-  background: var(--main-white);
+  background: var(--main-gray);
   padding: 90px 0px;
   margin: 90px 0px;
 }
@@ -1232,11 +1232,13 @@ p#breadcrumbs a {
 .services-section__card h2 {
   margin-bottom: 15px;
   text-transform: uppercase;
+  color: var(--main-white);
 }
 
 .services-section__card p {
   display: inline-block;
   margin-bottom: 30px;
+  color: var(--main-white);
 }
 
 .services-section__card a {
