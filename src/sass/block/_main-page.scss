@@ -2,7 +2,8 @@
     margin: 0;
 }
 .services-section {
-    background:var(--main-white);
+    background: var(--main-gray);
+    // background:var(--main-white);
     padding: 90px 0px;
     margin: 90px 0px;
     &__container {
@@ -20,10 +21,12 @@
         h2 {
             margin-bottom: 15px;
             text-transform: uppercase;
+            color:var(--main-white);
         }
         p {
             display: inline-block;
             margin-bottom: 30px;
+            color:var(--main-white);
         }
         a {
             display: inline-block;
