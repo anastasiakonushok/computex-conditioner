@@ -2067,6 +2067,10 @@ p#breadcrumbs a {
     color: #DAAB3A;
   }
 
+  .services-section {
+    background-attachment: fixed;
+  }
+
   .info-section__card:hover {
     transition: all 0.3s ease;
     box-shadow: 0 8px 20px 0 rgba(2, 24, 44, 0.281);
@@ -2448,10 +2452,6 @@ p#breadcrumbs a {
 
   .hero__content {
     width: 100%;
-  }
-
-  .services-section {
-    background-attachment: fixed;
   }
 
   .services-section__container {
