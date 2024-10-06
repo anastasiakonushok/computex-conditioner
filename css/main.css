@@ -452,6 +452,7 @@ p#breadcrumbs a {
 }
 
 .tab-links li a {
+  display: inline-block;
   font-size: var(--regular-font);
   line-height: 140%;
   font-weight: 400;
@@ -554,6 +555,10 @@ p#breadcrumbs a {
 
 .popular-brand .swiper-wrapper {
   transition-timing-function: linear !important;
+}
+
+.popular-brand__wrapp {
+  overflow: hidden;
 }
 
 .popular-brand img {
@@ -1212,6 +1217,9 @@ p#breadcrumbs a {
 
 .services-section {
   background: var(--main-gray);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   padding: 90px 0px;
   margin: 90px 0px;
 }
@@ -1757,6 +1765,7 @@ p#breadcrumbs a {
   line-height: 110%;
   font-weight: 700;
   color: var(--dark-color);
+  transition: all 0.3s ease-in;
 }
 
 .accordion:not(:last-child) {
@@ -2106,6 +2115,15 @@ p#breadcrumbs a {
     color: #DAAB3A;
   }
 
+  .accordion__title:hover {
+    transition: all 0.3s ease;
+  }
+
+  .accordion__title:hover h3 {
+    color: var(--main-yellow);
+    transition: all 0.3s ease-in;
+  }
+
   .swiper-certificates__slide:hover {
     transition: all 0.3s ease;
     background: var(--main-yellow);
@@ -2190,6 +2208,29 @@ p#breadcrumbs a {
     padding-left: 15px;
     font-weight: bold;
     text-align: left;
+  }
+
+  .tab-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tab-links li {
+    width: 100%;
+    /* Табы на мобильных устройствах занимают всю ширину */
+    margin: 0;
+    /* Добавляем отступы между табами */
+    flex: 1 0;
+  }
+
+  .tab-links a {
+    text-align: center;
+    /* Центрируем текст в кнопке */
+    padding: 15px;
+    /* Уменьшаем отступы */
+    width: 100%;
   }
 
   .catalog__container {
@@ -2407,6 +2448,10 @@ p#breadcrumbs a {
 
   .hero__content {
     width: 100%;
+  }
+
+  .services-section {
+    background-attachment: fixed;
   }
 
   .services-section__container {
