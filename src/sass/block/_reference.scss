@@ -48,6 +48,7 @@
     h3 {
         @include h3;
         color: var(--dark-color);
+        transition: all 0.3s ease-in;
     }
 }
 
@@ -69,4 +70,16 @@
     }
 }
 
+@include mq(tablet-wide, min) {
+    .accordion {
+        &__title {
+            @include hover {
+                h3 {
+                    color:var(--main-yellow);
+                    transition: all 0.3s ease-in;
+                }
+            }
+        }
+    }
+}
 

@@ -172,6 +172,7 @@ p#breadcrumbs {
         margin-right: 5px;
 
         a {
+            display: inline-block;
             @include regular;
             font-weight: 600;
             text-decoration: none;
@@ -316,6 +317,27 @@ p#breadcrumbs {
             padding-left: 15px;
             font-weight: bold;
             text-align: left; // Текст заголовка выравнивается по левому краю
+        }
+    }
+    
+}
+
+@include mq(tablet-wide, max) { 
+    .tab-links {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        li {
+            width: 100%; /* Табы на мобильных устройствах занимают всю ширину */
+            margin:0; /* Добавляем отступы между табами */
+            flex: 1 0;
+        }
+
+        a {
+            text-align: center; /* Центрируем текст в кнопке */
+            padding: 15px; /* Уменьшаем отступы */
+            width: 100%;
         }
     }
 }
