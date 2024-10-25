@@ -386,7 +386,7 @@
 
     .header {
         .header-top {
-            border-bottom: 1px solid rgb(214, 214, 214);
+            border-bottom: 1px solid rgba(214, 214, 214, 0.457);
             &__info {
                 a {
                     @include hover {
@@ -420,7 +420,7 @@
     }
     .header-main {
         .header-top {
-            border-bottom: 1px solid rgb(214, 214, 214);
+            border-bottom: 1px solid rgba(214, 214, 214, 0.362);
             &__info {
                 a {
                     @include hover {
