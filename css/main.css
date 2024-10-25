@@ -1687,7 +1687,7 @@ p#breadcrumbs a {
 }
 
 .product-card {
-  padding: 30px;
+  padding: 25px;
   background: var(--white-color);
   border-radius: 8px;
   box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
@@ -1699,13 +1699,19 @@ p#breadcrumbs a {
 
 .product-card__img {
   width: 100%;
+  aspect-ratio: 5/4;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-card__img img {
   display: block;
   width: 100%;
   object-fit: cover;
-  max-height: 150px;
+  height: 100%;
 }
 
 .product-card__info {
@@ -1715,11 +1721,11 @@ p#breadcrumbs a {
 .product-card__row {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .product-card__row ul {
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -1737,6 +1743,12 @@ p#breadcrumbs a {
 
 .product-card__row ul li p:nth-child(2) {
   font-weight: 600;
+}
+
+.product-card hr {
+  background: rgb(208, 208, 208);
+  border: none;
+  height: 1px;
 }
 
 .product-card .title {
@@ -1999,7 +2011,7 @@ p#breadcrumbs a {
   }
 
   .header .header-top {
-    border-bottom: 1px solid rgb(214, 214, 214);
+    border-bottom: 1px solid rgba(214, 214, 214, 0.457);
   }
 
   .header .header-top__info a:hover {
@@ -2029,7 +2041,7 @@ p#breadcrumbs a {
   }
 
   .header-main .header-top {
-    border-bottom: 1px solid rgb(214, 214, 214);
+    border-bottom: 1px solid rgba(214, 214, 214, 0.362);
   }
 
   .header-main .header-top__info a:hover {
