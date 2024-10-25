@@ -1939,6 +1939,12 @@ p#breadcrumbs a {
   background: var(--main-white);
 }
 
+.services-price__text {
+  font-size: 12px;
+  color: rgba(139, 139, 139, 0.701);
+  margin-top: 15px;
+}
+
 .services-tab {
   padding-top: 90px;
 }
