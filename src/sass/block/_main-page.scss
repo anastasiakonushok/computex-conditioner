@@ -14,25 +14,30 @@
         justify-content: space-between;
     }
     &__card {
+        flex: 1;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        gap: 20px;
         span {
             color:var(--main-yellow);
             font-size: 96px;
             font-weight: 800;
             display: inline-block;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
         h2 {
-            margin-bottom: 15px;
             text-transform: uppercase;
             color:var(--main-white);
         }
         p {
-            display: inline-block;
-            margin-bottom: 30px;
+            flex-grow: 1;
             color:var(--main-white);
+            margin-bottom: 15px;
         }
         a {
             display: inline-block;
+            width: fit-content;
         }
     }
 }

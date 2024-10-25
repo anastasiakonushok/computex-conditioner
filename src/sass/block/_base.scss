@@ -321,7 +321,9 @@ p#breadcrumbs {
     }
     
 }
-
+.body-lock {
+    overflow-y: hidden;
+}
 @include mq(tablet-wide, max) { 
     .tab-links {
         display: flex;

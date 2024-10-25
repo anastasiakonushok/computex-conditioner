@@ -168,7 +168,7 @@ table {
 
 .section-about {
   position: relative;
-  padding: 60px 0px 90px 0px;
+  padding: 60px 0px 0px 0px;
 }
 
 .section-about__content {
@@ -196,11 +196,19 @@ table {
   width: 50%;
 }
 
-.section-about__text p span {
+.section-about__text span {
   font-size: var(--h3-font);
   color: var(--main-yellow);
   font-weight: 700;
   font-style: italic;
+}
+
+.section-about__text h2 {
+  color: var(--main-yellow);
+}
+
+.section-about__text h3 {
+  color: var(--main-yellow);
 }
 
 .section-about__number {
@@ -547,6 +555,10 @@ p#breadcrumbs a {
 .main-wrapper {
   min-height: calc(100vh - 100px);
   /* Высота окна минус высота футера */
+}
+
+.body-lock {
+  overflow-y: hidden;
 }
 
 .popular-brand {
@@ -1229,28 +1241,36 @@ p#breadcrumbs a {
   justify-content: space-between;
 }
 
+.services-section__card {
+  flex: 1;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .services-section__card span {
   color: var(--main-yellow);
   font-size: 96px;
   font-weight: 800;
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .services-section__card h2 {
-  margin-bottom: 15px;
   text-transform: uppercase;
   color: var(--main-white);
 }
 
 .services-section__card p {
-  display: inline-block;
-  margin-bottom: 30px;
+  flex-grow: 1;
   color: var(--main-white);
+  margin-bottom: 15px;
 }
 
 .services-section__card a {
   display: inline-block;
+  width: fit-content;
 }
 
 .info-section__grid {
@@ -1695,6 +1715,7 @@ p#breadcrumbs a {
 
 .product-card__row ul li {
   justify-content: space-between;
+  align-items: center;
 }
 
 .product-card__row ul li p:nth-child(1) {
@@ -2154,7 +2175,7 @@ p#breadcrumbs a {
   :root {
     --h1-special: 2em;
     --h1-font: 2em;
-    --h2-font: 1.3em;
+    --h2-font: 1.5em;
     --h3-font: 1.1em;
     --font-128: 3em;
   }

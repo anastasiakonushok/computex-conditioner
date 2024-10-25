@@ -1,6 +1,6 @@
 .section-about {
     position: relative;
-    padding: 60px 0px 90px 0px;
+    padding: 60px 0px 0px 0px;
     &__content {
         gap: 60px;
         justify-content: space-between;
@@ -21,13 +21,17 @@
     &__text {
         width: 50%;
 
-        p {
-            span {
-                font-size: var(--h3-font);
-                color:var(--main-yellow);
-                font-weight: 700;
-                font-style: italic;
-            }
+        span {
+            font-size: var(--h3-font);
+            color:var(--main-yellow);
+            font-weight: 700;
+            font-style: italic;
+        }
+        h2 {
+            color:var(--main-yellow);
+        }
+        h3 {
+            color:var(--main-yellow);
         }
     }
     &__number {
