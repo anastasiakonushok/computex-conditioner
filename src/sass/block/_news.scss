@@ -61,7 +61,7 @@
     }
 }
 .news-single-page  {
-    padding: 60px 0px 90px 0px;
+    padding: 60px 0px 0px 0px;
     color:var(--dark-color);
     h1 {
         margin-bottom: 30px;
@@ -145,7 +145,7 @@
 
 
 .section-all-news {
-    padding: 60px 0px 90px 0px;
+    padding: 60px 0px 0px 0px;
     &__grid {
         display: grid;
         grid-template-columns: repeat(3,1fr);

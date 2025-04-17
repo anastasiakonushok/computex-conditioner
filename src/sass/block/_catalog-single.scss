@@ -6,6 +6,7 @@
     &__img {
         width: 40%;
         padding: 30px;
+        max-height: 350px;
         background:var(--main-white);
         border-radius:8px;
         display: flex;
@@ -14,7 +15,7 @@
         img {
             object-fit: contain;
             width: 100%;
-            max-height: 160px;
+            height: 100%;
         }
     }
 
@@ -31,7 +32,7 @@
         h1 {
             font-weight: 700;
             color:var(--dark-color);
-            margin-bottom: 15px;
+            margin-bottom: 40px;
         }
         .price {
             display: block;
@@ -44,7 +45,7 @@
     &__price {
         gap: 30px;
         align-items:center;
-        margin-top: 30px;
+        margin-bottom: 30px;
     }
     &__block {
         justify-content: space-between;
@@ -56,6 +57,19 @@
         h3 {
             color:var(--main-yellow);
             margin-bottom: 15px;
+        }
+        .tab-content {
+            padding: 0;
+            box-shadow:none;
+            background:none;
+        }
+        .tab-links {
+            .active  {
+                a {
+                    background:var(--main-gray);
+                    color:var(--main-white);
+                }
+            }
         }
     }
     .guarantee  {
@@ -71,8 +85,8 @@
             align-items: center;
             gap: 15px;
 
-            img {
-                width: 60px;
+            svg {
+                min-width: 60px;
             }
             p {
                 @include regular;
@@ -110,9 +124,93 @@
           }
     }
 }
+.all-desc {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+// .gallery-main {
+//     width: 100%; /* Основная галерея занимает 70% ширины родительского контейнера */
+//     height: 350px; /* Задайте фиксированную высоту */
+//   }
+//   .gallery-container {
+//     width: 50%;
+//     display: flex;
+//   }
+//   .gallery-main-container {
+//     width: 80%;
+//   }
+//   .gallery-thumbs {
+//     width: 60px; /* Ширина миниатюр */
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+//     overflow: hidden; /* Скрываем лишние элементы */
+//     flex-shrink: 0;
+//   }
+  
+//   .gallery-thumbs .swiper-slide {
+//     width: 60px; /* Фиксированная ширина миниатюры */
+//     height: 60px; /* Фиксированная высота */
+//     overflow: hidden;
+//     border: 2px solid transparent;
+//     border-radius: 8px;
+//   }
+  
+  
+//   .gallery-main .swiper-slide img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     border-radius: 8px;
+//   }
+  
+//   .gallery-thumbs-container {
+//     width: 20%; /* Миниатюры занимают 20% ширины */
+//     display: flex;
+//     flex-direction: column; /* Вертикальное расположение миниатюр */
+//     gap: 10px;
+//   }
+  
+//   .gallery-thumbs .swiper-slide {
+//     width: 60px; /* Фиксированная ширина миниатюры */
+//     height: 60px; /* Фиксированная высота */
+//     border: 2px solid transparent;
+//     border-radius: 8px;
+//     overflow: hidden;
+//     cursor: pointer;
+//     flex-shrink: 0; /* Отключаем сжатие */
+//     transition: border-color 0.3s;
+//   }
+  
+//   .gallery-thumbs .swiper-slide img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+  
+//   .gallery-thumbs .swiper-slide-thumb-active {
+//     border-color: var(--main-yellow);
+//   }
+  
+  
+  
 // @include mq(tablet-wide, max) {
 //     min-height: ;
 //  }
+@include mq(tablet-wide,min) {
+    .catalog-single {
+        &__description {   
+            .tab-links {
+                a {
+                    @include hover {
+                        background:var(--main-gray);
+                        color:var(--main-white);
+                    }
+                }
+            }
+        }
+    }
+}
 @include mq(tablet-wide, max) { 
     .catalog-single {
         &__body {

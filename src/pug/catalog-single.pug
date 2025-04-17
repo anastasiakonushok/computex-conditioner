@@ -16,43 +16,57 @@ block page
                 .catalog-single__body.flex
                     a(href="./img/img-card.jpg").catalog-single__img
                         img(src="./img/img-card.jpg" alt="")  
+                    //- .gallery-container
+                    //-     .gallery-main-container
+                    //-         .swiper.gallery-main
+                    //-             .swiper-wrapper
+                    //-                 a(href="./img/img-card.jpg").swiper-slide(data-fancybox="gallery")
+                    //-                     img(src="./img/img-card.jpg" alt="Главное изображение 1")
+                    //-                 a(href="./img/img-card.jpg").swiper-slide(data-fancybox="gallery")
+                    //-                     img(src="./img/img-card.jpg" alt="Главное изображение 2")
+                    //-                 a(href="./img/img-card.jpg").swiper-slide(data-fancybox="gallery")
+                    //-                     img(src="./img/img-card.jpg" alt="Главное изображение 3")
+                    //-     .gallery-thumbs-container
+                    //-         .swiper.gallery-thumbs
+                    //-             .swiper-wrapper
+                    //-                 .swiper-slide
+                    //-                     img(src="./img/img-card.jpg" alt="Миниатюра 1")
+                    //-                 .swiper-slide
+                    //-                     img(src="./img/img-card.jpg" alt="Миниатюра 2")
+                    //-                 .swiper-slide
+                    //-                     img(src="./img/img-card.jpg" alt="Миниатюра 3")
+
                     .catalog-single__content 
                         h1 Кондиционер
-                        p Настенный кондиционер Mild MLI-07RF/ MLO-07RF – это надежное и эффективное решение для обеспечения комфортного климата в вашем помещении.
-                        a(href="#info").all-desc Все характеристики
                         .catalog-single__price.flex
                             span.price 1200 BYN
                             a(href="./contact.html").button-primary Купить 
+                        p Настенный кондиционер Mild MLI-07RF/ MLO-07RF – это надежное и эффективное решение для обеспечения комфортного климата в вашем помещении.
+                        a(href="#info").all-desc Все характеристики
                 .catalog-single__block.flex#info
                     .catalog-single__description
-                        h3 Характеристики
-                        .catalog-single__table
-                            table 
-                                tbody 
-                                    tr 
-                                        td Страна происхождения (производства) 
-                                        td Китай
-                                    tr 
-                                        td Тип питания 
-                                        td Сеть
-                                    tr 
-                                        td Страна происхождения (производства) 
-                                        td Китай
-                                    tr 
-                                        td Тип питания 
-                                        td Сеть
-                                    tr 
-                                        td Страна происхождения (производства) 
-                                        td Китай
-                                    tr 
-                                        td Тип питания 
-                                        td Сеть
-                                    tr 
-                                        td Страна происхождения (производства) 
-                                        td Китай
-                                    tr 
-                                        td Тип питания 
-                                        td Сеть
+                        ul.tab-links.flex
+                            li.active: a(href="#tab1") Характеристики
+                            li: a(href="#tab2") Описание
+                            li: a(href="#tab3") О производителе
+                        .tab-content
+                            .tab#tab1.active
+                                h3 Характеристики
+                                .catalog-single__table
+                                    table 
+                                        tbody 
+                                            tr 
+                                                td Страна происхождения (производства) 
+                                                td Китай
+                                            tr 
+                                                td Тип питания 
+                                                td Сеть
+                            .tab.inner-content#tab2
+                                h3 Описание
+                                p Этот кондиционер сочетает в себе энергоэффективность и современный дизайн, обеспечивая комфорт в любое время года.
+                            .tab.inner-content#tab3
+                                h3 О производителе
+                                p Производитель Mild известен качественными климатическими решениями, предлагая инновационные устройства с высокой надежностью.
                     .catalog-single__info.guarantee 
                         .guarantee__block.flex
                             .guarantee__row.flex
@@ -63,5 +77,5 @@ block page
                                 p Возможность рассрочки до 12 месяцев
         include chunk/services-block
         include chunk/card-slider
-        include chunk/map
+
     include chunk/footer

@@ -21,7 +21,7 @@
       .text {
         @include regular;
         font-weight: 600;
-        transition: all 0.3s ease-in;
+        // transition: all 0.3s ease-in;
       }
     }
     &__card {

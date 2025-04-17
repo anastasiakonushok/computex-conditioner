@@ -159,24 +159,6 @@ $(document).ready(function () {
         },
     });
 
-    const swiperAuto = new Swiper(".swiper-auto", {
-        spaceBetween: 30,
-        navigation: {
-            nextEl: ".swiper-auto-next",
-            prevEl: ".swiper-auto-prev",
-        },
-        breakpoints: {
-            350: {
-                slidesPerView: 1,
-            },
-            650: {
-                slidesPerView: 3,
-            },
-            1170: {
-                slidesPerView: 3,
-            },
-        },
-    });
 
     const swiperProduct = new Swiper(".swiper-product", {
         spaceBetween: 30,
@@ -224,6 +206,28 @@ $(document).ready(function () {
             },
         },
     });
+
+    const galleryThumbs = new Swiper('.gallery-thumbs', {
+        direction: 'vertical', // Вертикальная прокрутка для миниатюр
+        spaceBetween: 10, // Отступ между миниатюрами
+        slidesPerView: 'auto', // Миниатюры подстраиваются под контент
+        freeMode: true, // Свободная прокрутка
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        slideToClickedSlide: true, // Переключение на кликнутую миниатюру
+    });
+
+    const galleryMain = new Swiper('.gallery-main', {
+        spaceBetween: 10, // Отступы между слайдами основной галереи
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs, // Связываем с миниатюрами
+        },
+    });
+
 
     (function ($) { // Begin jQuery
         $(function () { // DOM ready

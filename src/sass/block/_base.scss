@@ -105,8 +105,14 @@ p#breadcrumbs {
     h2 {
         margin-bottom: 30px;
     }
+    h3 {
+        margin-bottom: 30px;
+    }
+    h4 {
+        margin-bottom: 30px;
+    }
     p {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     ul {
         padding-left: 15px;
@@ -127,6 +133,91 @@ p#breadcrumbs {
     b {
         font-weight: 700;
     }
+    strong {
+        font-weight: 600;
+    }
+    img {
+        display: inline-block;
+        object-fit: cover;
+    }
+
+    .schema-faq {
+        margin: 2rem auto;
+        padding: 1rem;
+        border-radius: 12px;
+        background: #f9f9f9;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      }
+      
+      .schema-faq-section {
+        margin-bottom: 1.5rem;
+        padding: 1rem 1.2rem;
+        border-left: 4px solid #00aaff;
+        background-color: #fff;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .schema-faq-section:hover {
+        background-color: #f0f8ff;
+      }
+      
+      .schema-faq-question::before {
+        content: "❓";
+        margin-right: 0.5rem;
+        color: #0077cc;
+      }
+      
+      .schema-faq-question {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #003366;
+        margin-bottom: 0.5rem;
+      }
+      
+      .schema-faq-answer::before {
+        content: "💬";
+        margin-right: 0.5rem;
+        color: #007744;
+      }
+      
+      .schema-faq-answer {
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.5;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+      }
+      
+      .schema-faq-answer img {
+        display: block;
+        margin-top: 1rem;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      a {
+        color: var(--main-yellow); // основной цвет ссылки
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        transition: color 0.3s ease, text-decoration-color 0.3s ease;
+    
+        &:hover {
+          color: var(--main-yellow); // темнее при наведении
+          text-decoration-color: #005fa3;
+        }
+    
+        &:visited {
+          color: var(--dark-color); // необязательно — если нужно отображать посещённые
+        }
+    
+        &:active {
+          color: var(--main-gray);
+        }
+      }
 }
 
 .styled-table {
@@ -189,6 +280,7 @@ p#breadcrumbs {
             color: #333;
             border-radius: 8px;
             transition: all 0.3s ease-in;
+            white-space: nowrap;
             &.active {
                 background: #009879;
                 color: #fff;
@@ -227,6 +319,7 @@ p#breadcrumbs {
     align-items: center;
     gap: 15px;
     margin-top: 30px;
+    flex-wrap: wrap;
   }
   
   .pagination {

@@ -34,18 +34,25 @@ block page
                 .container.info-section__container
                     .info-section__grid
                         a(href="./catalog.html" style='background-image: url("./img/bg-sale-1.png"); ').info-section__card.info-section__card--1
-                            h2 Кондиционеры по лучшим ценам!
-                            img(src="img/conditioner-2.png" alt="") 
-                            p Комфорт в каждом доме
+                            .info-section__text
+                                h2 Кондиционеры по лучшим ценам!
+                                p Комфорт в каждом доме
+                                span Подробнее
+                            .info-section__img
+                                img(src="img/conditioner-2.png" alt="")  
                         a(href="./pay-page.html").info-section__card.info-section__card--2
-                            h2 Покупай сейчас —плати потом!
-                            p Все виды кондиционеров от 40 р. в месяц
+                            .info-section__info 
+                                h2 Покупай сейчас —плати потом!
+                                p Все виды кондиционеров от 40 р. в месяц
                             img(src="img/credit-card.png" alt="")
                             span Подробнее
                         a(href="./catalog.html").info-section__card.info-section__card--3
-                            h2 кондиционеры для помещений от 50 кв.
-                            img(src="img/group-conditioner.png" alt="")
-                            p Комфортные условия для больших площадей
+                            .info-section__text
+                                h2 кондиционеры для помещений от 50 кв.
+                                p Комфортные условия для больших площадей
+                                span Подробнее
+                            .info-section__img
+                                img(src="img/ul-comfort.png" alt="")
             include chunk/news
-            include chunk/map
+
         include chunk/footer
